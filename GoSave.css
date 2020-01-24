@@ -1,2 +1,59 @@
 /*Dette er vores CSS */
-hej hej hej
+/* Denne definerer udseende på header */
+body, html {
+    height: 100%;
+}
+.headerImage {
+    background-image: url('GoSaveHeaderImage.jpeg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+/* Placer tekst i midten af gruppebilledet */
+.headerText {
+    text-align: center;
+    position: absolute;
+    font-size: xx-large;
+    font-family: "Arial Black", "gadget", "sans-serif";
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.navbarButtons a {
+    position: absolute;
+    left: -120px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+.navbarButtons a:hover {
+    left: 0;
+}
+
+#procent {
+    top: 20px;
+    background-color: #aeb0dd;
+    font-family: "Arial Black", "gadget", "sans-serif";
+}
+#quantity {
+    top: 120px;
+    background-color: #aeb0dd;
+    font-family: "Arial Black", "gadget", "sans-serif";
+}
+#taxfree {
+    top: 220px;
+    background-color: #aeb0dd;
+    font-family: "Arial Black", "gadget", "sans-serif";
+}
+#signIn {
+    top: 320px;
+    background-color: #aeb0dd;
+    font-family: "Arial Black", "gadget", "sans-serif";
