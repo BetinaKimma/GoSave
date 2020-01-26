@@ -23,7 +23,7 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
 }
-.navbarButtons a {
+.navbarButtons a{
     position: absolute;
     left: -120px;
     transition: 0.3s;
