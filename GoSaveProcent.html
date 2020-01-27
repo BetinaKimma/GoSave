@@ -9,19 +9,31 @@
           href = "GoSave.css" />
 
     <!-- Dette er headeren -->
-    <title>Procent</title>
+    <title>GoSaveProcent</title>
+
+
+
 </head>
 <!-- Head slut -->
 
 <!-- Body start -->
 <body>
-
-
-HEEEEEEEEJJJ
-
-
+<!-- Dette er headeren der består af et billede med tekst i midten -->
+<section class="baseHeaderImage headerImageProcent">
+    <div id="calcarea" style="background-color: #fff;text-align: :center;padding:40px;width:200px;">
+        <label for="previousPrice">Førpris</label>
+        <input type="text" id="previousPrice" name="previousPrice">
+        <label for="newPrice">Nedsat pris</label>
+        <input type="text" id="newPrice" name="newPrice">
+        <button onclick="udregnProcentvisBesparelse();">Udregn besparelse</button>
+        <div id="resultDiv">
+            <p id="besparelsespris">Besparelsen er: <span id="besparelse"></span> </p>
+        </div>
+    </div>
+</section>
 </body>
 <!-- Body slut -->
+
 <!-- Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
 <script src="GoSaveBetina.js"></script>
 </html>

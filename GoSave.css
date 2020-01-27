@@ -4,13 +4,19 @@ body, html {
     height: 100%;
 }
 .headerImage {
-    background-image: url('GoSaveHeaderImage.jpeg');
+    background-image: url('GoSaveHeaderImage_optimized.jpg');
+}
+.baseHeaderImage{
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     position: relative;
+}
+
+.headerImageProcent{
+    background-image: url('GoSaveProcent.jpeg');
 }
 /* Placer tekst i midten af gruppebilledet */
 .headerText {
@@ -43,6 +49,7 @@ body, html {
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
 }
+
 #quantity {
     top: 120px;
     background-color: #aeb0dd;
@@ -57,3 +64,7 @@ body, html {
     top: 320px;
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
+}
+
+#resultDiv{display: none;}
+#calcarea{margin: 0 auto;}
