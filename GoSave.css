@@ -3,6 +3,8 @@
 body, html {
     height: 100%;
 }
+/* BS. Her er alle baggrundsbilleder til alle sider. Alle billeder har en fælles styling,
+ved at have class baseHeaderImage i deres respektive HTML*/
 .headerImage {
     background-image: url('GoSaveHeaderImage_optimized.jpg');
 }
@@ -14,11 +16,23 @@ body, html {
     box-sizing: border-box;
     position: relative;
 }
-
-.headerImageProcent{
-    background-image: url('GoSaveProcent.jpeg');
+.headerImagePercent{
+    background-image: url('GoSaveProcent_optimized.jpg');
 }
-/* Placer tekst i midten af gruppebilledet */
+.headerImageQuantity{
+    background-image: url("GoSaveQuantity_optimized.jpg")
+}
+.headerImageTaxfree{
+    background-image: url('GoSaveTaxfreeValuta_optimized.jpg');
+}
+.headerImageLogIn{
+    background-image: url("GoSaveBrugerProfil_optimized.jpg");
+}
+.headerImageUserProfile{
+    background-image: url("GoSaveListe_optimized.jpg");
+}
+
+/* BS: Dette er teksten midt i billedet på forsiden. Placer tekst i midten af gruppebilledet */
 .headerText {
     text-align: center;
     position: absolute;
@@ -29,6 +43,7 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
 }
+/*BS: Dette er stylingen af menuknapperne */
 .navbarButtons a{
     position: absolute;
     left: -120px;
@@ -43,13 +58,15 @@ body, html {
 .navbarButtons a:hover {
     left: 0;
 }
-
+/* BS: Herunder er styling af "indhold" af hver enkelt menuknap.
+Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker det. Og så har de fået en
+ unik afstand til toppen, således at de ikke ligger oven på hinanden, og man kan ligeledes også selv
+ justere afstanden mellem knapperne*/
 #procent {
     top: 20px;
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
 }
-
 #quantity {
     top: 120px;
     background-color: #aeb0dd;
