@@ -18,6 +18,7 @@ ved at have class baseHeaderImage i deres respektive HTML*/
 }
 .headerImagePercent{
     background-image: url('GoSaveProcent_optimized.jpg');
+    opacity: 0.8;
 }
 .headerImageQuantity{
     background-image: url("GoSaveQuantity_optimized.jpg")
@@ -30,6 +31,7 @@ ved at have class baseHeaderImage i deres respektive HTML*/
 }
 .headerImageUserProfile{
     background-image: url("GoSaveListe_optimized.jpg");
+    opacity: 0.8;
 }
 
 /* BS: Dette er teksten midt i billedet på forsiden. Placer tekst i midten af gruppebilledet */
@@ -84,4 +86,6 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
 }
 
 #resultDiv{display: none;}
-#calcarea{margin: 0 auto;}
+#calcarea{margin: 0 auto;
+    opacity: 0.6;
+}
