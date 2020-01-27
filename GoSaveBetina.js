@@ -1,5 +1,5 @@
 // Dette er vores Javascript
-// Denne funktion åbner en ny side i samme vindue ved tryk på button. en mulig løsning til vores buttons
+// Denne funktion åbner en ny side i samme vindue ved tryk på button. en mulig løsning til vores
 
 // Dette er funktionerne til procent
 function udregnProcentvisBesparelse() {
@@ -38,6 +38,8 @@ function udregnProcentvisStigning() {
         }
     }
 
+
+)
 
     function udregnPrisEfterProcent() {
         if (!$('#besparelsepris').is(":visible")) {
