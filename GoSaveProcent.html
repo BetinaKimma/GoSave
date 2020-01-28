@@ -17,6 +17,7 @@
 <body>
 <!-- Dette er headeren der består af et billede med tekst i midten -->
 <section class="baseHeaderImage headerImagePercent">
+<!-- BS. Dette er feltet for procentudregning -->
     <div id="calcareaPercent" class="column">
         <br>
         <br>
@@ -26,17 +27,18 @@
         <br>
         <br>
         <p id="mainText" >Hvor mange procent sparer du?</p>
-        <label class="inputText" for="previousPrice">Førpris</label>
-        <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
-        <label class="inputText" for="newPrice">Nedsat pris</label>
-        <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
+        <label class="inputText" for="previousPrice1">Førpris</label>
+        <input class="inputField" type="text" id="previousPrice1" placeholder="Førpris..." name="previousPrice">
+        <label class="inputText" for="newPrice1">Nedsat pris</label>
+        <input class="inputField" type="text" id="newPrice1" placeholder="Ny pris..." name="newPrice">
         <br>
         <br>
         <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
-        <div id="resultDiv">
-            <p id="besparelsespris">Besparelsen er: <span placeholder="Besparelsen er..." id="besparelse"></span> </p>
+        <div id="resultDiv1">
+            <p id="besparelsespris">Besparelsen er: <span id="besparelse1"></span></p>
         </div>
     </div>
+<!-- BS. Dette er feltet for prisstigning -->
     <div id="calcareaPriceChange" class="column">
         <br>
         <br>
@@ -46,17 +48,18 @@
         <br>
         <br>
         <p id="mainText" >Hvor mange procent er varen steget?</p>
-        <label class="inputText" for="previousPrice">Førpris</label>
-        <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
-        <label class="inputText" for="newPrice">Nedsat pris</label>
-        <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
+        <label class="inputText" for="previousPrice2">Førpris</label>
+        <input class="inputField" type="text" id="previousPrice2" placeholder="Førpris..." name="previousPrice">
+        <label class="inputText" for="newPrice2">Steget pris</label>
+        <input class="inputField" type="text" id="newPrice2" placeholder="Ny pris..." name="newPrice">
         <br>
         <br>
-        <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
-        <div id="resultDiv">
-            <p id="besparelsespris">Besparelsen er: <span placeholder="Besparelsen er..." id="besparelse"></span> </p>
+        <button class="resultButton" onclick="udregnProcentvisStigning();">Udregn</button>
+        <div id="resultDiv2">
+            <p id="besparelsespris">Varen er steget: <span id="stigning"></span></p>
         </div>
     </div>
+<!-- BS. Dette er feltet for pris efter rabat -->
     <div id="calcareaPrice" class="column">
         <br>
         <br>
@@ -68,13 +71,13 @@
         <p id="mainText" >Hvad er prisen efter procent rabat?</p>
         <label class="inputText" for="previousPrice">Førpris</label>
         <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
-        <label class="inputText" for="newPrice">Nedsat pris</label>
+        <label class="inputText" for="newPrice">Rabat pris</label>
         <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
         <br>
         <br>
-        <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
-        <div id="resultDiv">
-            <p id="besparelsespris">Besparelsen er: <span placeholder="Besparelsen er..." id="besparelse"></span> </p>
+        <button class="resultButton" onclick="udregnPrisEfterProcent();">Udregn</button>
+        <div id="resultDivPrice">
+            <p id="besparelsespris">Besparelsen er: <span id="besparelse2"></span> </p>
         </div>
     </div>
 </section>
