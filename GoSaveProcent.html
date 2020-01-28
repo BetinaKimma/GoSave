@@ -27,15 +27,15 @@
         <br>
         <br>
         <p id="mainText" >Hvor mange procent sparer du?</p>
-        <label class="inputText" for="previousPrice1">Førpris</label>
-        <input class="inputField" type="text" id="previousPrice1" placeholder="Førpris..." name="previousPrice">
-        <label class="inputText" for="newPrice1">Nedsat pris</label>
-        <input class="inputField" type="text" id="newPrice1" placeholder="Ny pris..." name="newPrice">
+        <label class="inputText" for="previousPricePercent">Førpris</label>
+        <input class="inputField" type="text" id="previousPricePercent" placeholder="Førpris..." name="previousPricePercent">
+        <label class="inputText" for="newPricePercent">Nedsat pris</label>
+        <input class="inputField" type="text" id="newPricePercent" placeholder="Ny pris..." name="newPricePercent">
         <br>
         <br>
-        <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
-        <div id="resultDiv1">
-            <p id="besparelsespris">Besparelsen er: <span id="besparelse1"></span></p>
+        <button class="resultButton" onclick="calculatePercentSaving();">Udregn</button>
+        <div id="resultDivPercent">
+            <p id="besparelsespris">Besparelsen er: <span id="savings"></span></p>
         </div>
     </div>
 <!-- BS. Dette er feltet for prisstigning -->

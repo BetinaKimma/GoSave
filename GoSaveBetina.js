@@ -2,20 +2,21 @@
 // Denne funktion åbner en ny side i samme vindue ved tryk på button. en mulig løsning til vores
 
 // BS. Dette er funktionen til procentvis besparelse
-function udregnProcentvisBesparelse() {
-    document.getElementById("resultDiv1").style.display = "block";
+function calculatePercentSaving() {
+    document.getElementById("resultDivPercent").style.display = "block";
 
-    let foer = document.getElementById("previousPrice1").value;
-    let efter = document.getElementById("newPrice1").value;
-    if (!isNaN(foer) && !isNaN(efter)) {
+    let before = document.getElementById("previousPricePercent").value;
+    let after = document.getElementById("newPricePercent").value;
+    if (!isNaN(before) && !isNaN(after)) {
 
-        if (foer > efter) {
-            let sparet = foer - efter;
-            let procentbesparelse = (sparet / foer) * 100;
-            document.getElementById("besparelse1").innerHTML = procentbesparelse.toFixed(2) + "%";
+        if (before > after) {
+            let saved = before - after;
+            let percentsavings = (saved / before) * 100;
+            document.getElementById("savings").innerHTML = percentsavings.toFixed(2) + "%";
         }
     }
 }
+/*
 // BS. Dette er funktionen til beregning af procentvis stigning
 function udregnProcentvisStigning() {
     document.getElementById("resultDiv2").style.display = "block";
