@@ -34,24 +34,18 @@ function calculatePercentDiff() {
     }
 }
 
-/*
+// BS. Dette er funktionen til beregning af pris efter en procentrabat. Det er en færdig implementeret funktion.
+function calculatePriceAfterDiscount() {
+    document.getElementById("resultDivDisc").style.display = "block";
 
-    function udregnPrisEfterProcent() {
-        if (!$('#besparelsepris').is(":visible")) {
-            $('#besparelsepris').show();
-        }
+    let before = document.getElementById("previousPriceDiscount").value;
+    let percent = document.getElementById("discountPercentage").value;
+    if (!isNaN(before) && !isNaN(percent)) {
 
-        var foer = document.getElementById('foerpris').value;
-        var procent = document.getElementById('procentsats').value;
-        if (!isNaN(foer) && !isNaN(efter)) {
+                let percentPrice = before / 100;
+                let saved = percent * percentPrice;
+                let discountPrice = before - saved;
 
-            if (foer > efter) {
-                var procentpris = foer/100;
-                var kronersparet = procentsats*procentpris;
-                var prisefterrabat = foer-kronersparet;
-
-                document.getElementById('besparelse').innerHTML = procentbesparelse.toFixed(2) + "Kr";
+                document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
-        }
 }
-*/

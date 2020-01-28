@@ -69,15 +69,15 @@
         <br>
         <br>
         <p id="mainText" >Hvad er prisen efter procent rabat?</p>
-        <label class="inputText" for="previousPrice">Førpris</label>
-        <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
-        <label class="inputText" for="newPrice">Rabat pris</label>
-        <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
+        <label class="inputText" for="previousPriceDiscount">Førpris</label>
+        <input class="inputField" type="text" id="previousPriceDiscount" placeholder="Førpris..." name="previousPriceDiscount">
+        <label class="inputText" for="discountPercentage">Procent</label>
+        <input class="inputField" type="text" id="discountPercentage" placeholder="Procent..." name="discountPercentage">
         <br>
         <br>
-        <button class="resultButton" onclick="udregnPrisEfterProcent();">Udregn</button>
-        <div id="resultDivPrice">
-            <p id="besparelsespris">Besparelsen er: <span id="besparelse2"></span> </p>
+        <button class="resultButton" onclick="calculatePriceAfterDiscount();">Udregn</button>
+        <div id="resultDivDisc">
+            <p id="besparelsespris">Ny pris er: <span id="discount"></span></p>
         </div>
     </div>
 </section>
