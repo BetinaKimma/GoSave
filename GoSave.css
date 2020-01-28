@@ -135,6 +135,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     background: #aeb0dd;
     margin: auto;
     font-family: "Arial Black", "gadget", "sans-serif";
+    font-size: large;
 }
 #besparelsespris{
     padding: 9px 25px;
