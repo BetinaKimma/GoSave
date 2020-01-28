@@ -18,7 +18,6 @@ ved at have class baseHeaderImage i deres respektive HTML*/
 }
 .headerImagePercent{
     background-image: url('GoSaveProcent_optimized.jpg');
-    opacity: 0.8;
 }
 .headerImageQuantity{
     background-image: url("GoSaveQuantity_optimized.jpg")
@@ -93,6 +92,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 31.5%;
     padding: 10px;
+    margin-top: 150px;
 }
 #calcareaPriceChange{
     background-color: none;
@@ -100,6 +100,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 31.5%;
     padding: 10px;
+    margin-top: 150px;
 }
 #calcareaPrice{
     background-color: none;
@@ -107,6 +108,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 31.5%;
     padding: 10px;
+    margin-top: 150px;
 }
 #mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
