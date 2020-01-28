@@ -48,6 +48,19 @@ function calculatePriceAfterDiscount() {
                 document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
 }
+// BS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
+function calculatePercentOff() {
+    document.getElementById("resultDivPercentOff").style.display = "block";
+
+    let before = document.getElementById("previousPriceFull").value;
+    let percent = document.getElementById("discountPercentOff").value;
+    if (!isNaN(before) && !isNaN(percent)) {
+
+        let percentOff = percent * before / 100;
+
+        document.getElementById("priceOff").innerHTML = percentOff.toFixed(2) + "Kr";
+    }
+}
 var logoIndex = 0;
 showLogos();
 

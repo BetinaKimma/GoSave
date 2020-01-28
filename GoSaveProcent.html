@@ -60,6 +60,20 @@
             <p id="besparelsespris">Ny pris er: <span id="discount"></span></p>
         </div>
     </div>
+    <!-- BS. Dette er feltet for rabatten af en pris -->
+    <div id="calcareaPriceOff" class="column">
+        <p id="mainText" >Hvor mange kroner sparer du?</p>
+        <label class="inputText" for="previousPriceFull">Førpris</label>
+        <input class="inputField" type="text" id="previousPriceFull" placeholder="Førpris..." name="previousPriceFull">
+        <label class="inputText" for="discountPercentOff">Procent</label>
+        <input class="inputField" type="text" id="discountPercentOff" placeholder="Procent..." name="discountPercentOff">
+        <br>
+        <br>
+        <button class="resultButton" onclick="calculatePercentOff();">Udregn</button>
+        <div id="resultDivPercentOff">
+            <p id="besparelsespris">Du sparer: <span id="priceOff"></span></p>
+        </div>
+    </div>
 </section>
 </body>
 <!-- Body slut -->
