@@ -1,6 +1,5 @@
 // Dette er vores Javascript
 // Denne funktion åbner en ny side i samme vindue ved tryk på button. en mulig løsning til vores
-
 // BS. Dette er funktionen til beregning af procentvis besparelse. Det er en færdig implementeret funktion.
 function calculatePercentSaving() {
     document.getElementById("resultDivPercent").style.display = "block";
@@ -62,4 +61,7 @@ function showLogos() {
     if (logoIndex > logos.length) {logoIndex = 1}
     logos[logoIndex-1].style.display = "block";
     setTimeout(showLogos, 400); // Change image every 2 seconds
+}
+function returnToFrontPage() {
+    location.replace("GoSave.html");
 }
