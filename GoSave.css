@@ -131,7 +131,6 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
 }
-
 #resultDiv{
 }
 #calcareaPercent{
@@ -140,8 +139,8 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 180px;
-    margin-left: 60px;
+    margin-top: 230px;
+    margin-left: 80px;
 }
 #calcareaPriceChange{
     background-color: none;
@@ -149,8 +148,8 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 130px;
-    margin-left: 48px;
+    margin-top: 170px;
+    margin-left: 60px;
 }
 #calcareaPrice{
     background-color: none;
@@ -158,8 +157,8 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 170px;
-    margin-left: 45px;
+    margin-top: 225px;
+    margin-left: 70px;
 }
 #calcareaPriceOff{
     background-color: none;
@@ -167,16 +166,16 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 70px;
-    margin-left: 45px;
+    margin-top: 180px;
+    margin-left: 65px;
 }
 #mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
-    font-size: x-large;
+    font-size: xx-large;
 }
 .inputText{
     font-family: "Arial Black", "gadget", "sans-serif";
-    font-size: x-large;
+    font-size: xx-large;
 }
 .inputField{
     diplay: block;
@@ -187,6 +186,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     border: 0;
     background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
     margin: auto;
+    font-size: x-large;
 }
 .resultButton{
     diplay: block;
@@ -197,7 +197,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     background: #aeb0dd;
     margin: auto;
     font-family: "Arial Black", "gadget", "sans-serif";
-    font-size: large;
+    font-size: x-large;
 }
 #besparelsespris{
     padding: 9px 25px;
@@ -210,4 +210,5 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     justify-content: center;
     align-items: center;
     font-family: "Arial Black", "gadget", "sans-serif";
+    font-size: x-large;
 }
