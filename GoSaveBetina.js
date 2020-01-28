@@ -1,7 +1,7 @@
 // Dette er vores Javascript
 // Denne funktion åbner en ny side i samme vindue ved tryk på button. en mulig løsning til vores
 
-// BS. Dette er funktionen til procentvis besparelse
+// BS. Dette er funktionen til beregning af procentvis besparelse. Det er en færdig implementeret funktion.
 function calculatePercentSaving() {
     document.getElementById("resultDivPercent").style.display = "block";
 
@@ -16,20 +16,20 @@ function calculatePercentSaving() {
         }
     }
 }
-/*
-// BS. Dette er funktionen til beregning af procentvis stigning
-function udregnProcentvisStigning() {
-    document.getElementById("resultDiv2").style.display = "block";
 
-    let foer = document.getElementById('previousPrice2').value;
-    let efter = document.getElementById('newPrice2').value;
-    if (!isNaN(foer) && !isNaN(efter)) {
+// BS. Dette er funktionen til beregning af procentvis stigning. Det er en færdig implementeret funktion.
+function calculatePercentDiff() {
+    document.getElementById("resultDivDiff").style.display = "block";
 
-        if (foer < efter) {
-            let sparet = efter - foer;
-            let procentstigning = (sparet / foer) * 100;
+    let before = document.getElementById("previousPriceDiff").value;
+    let after = document.getElementById("newPriceDiff").value;
+    if (!isNaN(before) && !isNaN(after)) {
 
-            document.getElementById('stigning').innerHTML = procentstigning.toFixed(2) + "%";
+        if (before < after) {
+            let saved = after - before;
+            let percentDifference = (saved / before) * 100;
+
+            document.getElementById("difference").innerHTML = percentDifference.toFixed(2) + "%";
         }
     }
 }

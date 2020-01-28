@@ -48,15 +48,15 @@
         <br>
         <br>
         <p id="mainText" >Hvor mange procent er varen steget?</p>
-        <label class="inputText" for="previousPrice2">Førpris</label>
-        <input class="inputField" type="text" id="previousPrice2" placeholder="Førpris..." name="previousPrice">
-        <label class="inputText" for="newPrice2">Steget pris</label>
-        <input class="inputField" type="text" id="newPrice2" placeholder="Ny pris..." name="newPrice">
+        <label class="inputText" for="previousPriceDiff">Førpris</label>
+        <input class="inputField" type="text" id="previousPriceDiff" placeholder="Førpris..." name="previousPriceDiff">
+        <label class="inputText" for="newPriceDiff">Steget pris</label>
+        <input class="inputField" type="text" id="newPriceDiff" placeholder="Ny pris..." name="newPriceDiff">
         <br>
         <br>
-        <button class="resultButton" onclick="udregnProcentvisStigning();">Udregn</button>
-        <div id="resultDiv2">
-            <p id="besparelsespris">Varen er steget: <span id="stigning"></span></p>
+        <button class="resultButton" onclick="calculatePercentDiff();">Udregn</button>
+        <div id="resultDivDiff">
+            <p id="besparelsespris">Varen er steget: <span id="difference"></span></p>
         </div>
     </div>
 <!-- BS. Dette er feltet for pris efter rabat -->
