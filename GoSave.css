@@ -138,25 +138,28 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     background-color: none;
     text-align:center;
     float: left;
-    width: 31.5%;
+    width: 18%;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 180px;
+    margin-left: 60px;
 }
 #calcareaPriceChange{
     background-color: none;
     text-align:center;
     float: left;
-    width: 31.5%;
+    width: 18%;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 130px;
+    margin-left: 48px;
 }
 #calcareaPrice{
     background-color: none;
     text-align:center;
     float: left;
-    width: 31.5%;
+    width: 18%;
     padding: 10px;
-    margin-top: 80px;
+    margin-top: 170px;
+    margin-left: 45px;
 }
 #mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
