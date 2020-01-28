@@ -85,7 +85,46 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     font-family: "Arial Black", "gadget", "sans-serif";
 }
 
-#resultDiv{display: none;}
-#calcarea{margin: 0 auto;
-    opacity: 0.6;
+#resultDiv{
+}
+#calcareaPercent{
+    background-color:transparent;
+    text-align:center;
+    padding:40px;
+    width:200px;
+}
+
+.inputText{
+    font-family: "Arial Black", "gadget", "sans-serif";
+}
+.inputField{
+    diplay: block;
+    width: 85%;
+    padding: .5rem .5rem .5rem;
+    border-radius: 50px;
+    font-family: sans-serif, Montserrat;
+    border: 0;
+    background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
+    margin: auto;
+}
+.resultButton{
+    diplay: block;
+    width: 85%;
+    padding: .5rem .5rem .5rem;
+    border-radius: 50px;
+    border: 0;
+    background: #aeb0dd;
+    margin: auto;
+    font-family: "Arial Black", "gadget", "sans-serif";
+}
+#besparelsespris{
+    padding: 9px 25px;
+    background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 1rem 0 0;
+    justify-content: center;
+    align-items: center;
 }

@@ -17,14 +17,16 @@
 <body>
 <!-- Dette er headeren der består af et billede med tekst i midten -->
 <section class="baseHeaderImage headerImagePercent">
-    <div id="calcarea" style="background-color: #fff;text-align: :center;padding:40px;width:200px;">
-        <label for="previousPrice">Førpris</label>
-        <input type="text" id="previousPrice" name="previousPrice">
-        <label for="newPrice">Nedsat pris</label>
-        <input type="text" id="newPrice" name="newPrice">
-        <button onclick="udregnProcentvisBesparelse();">Udregn besparelse</button>
+    <div id="calcareaPercent">
+        <label class="inputText" for="previousPrice">Førpris</label>
+        <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
+        <label class="inputText" for="newPrice">Nedsat pris</label>
+        <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
+        <br>
+        <br>
+        <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
         <div id="resultDiv">
-            <p id="besparelsespris">Besparelsen er: <span id="besparelse"></span> </p>
+            <p id="besparelsespris">Besparelsen er: <span placeholder="Besparelsen er..." id="besparelse"></span> </p>
         </div>
     </div>
 </section>
