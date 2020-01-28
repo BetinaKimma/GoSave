@@ -9,7 +9,46 @@ body, html {
     margin-top: 20px;
     float: right;
 }
+/* Slideshow container */
+.logos-container {
+    max-width: 200px;
+    position: relative;
+    margin: 200px;
+    margin-top: 40px;
+    float: right;
+}
 
+/* Hide the images by default */
+.myLogos {
+    display: none;
+}
+
+/* Number text (1/3 etc) */
+.logo {
+    color: black;
+    font-size: 100px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 /* BS. Her er alle baggrundsbilleder til alle sider. Alle billeder har en fælles styling,
 ved at have class baseHeaderImage i deres respektive HTML*/
 .headerImage {

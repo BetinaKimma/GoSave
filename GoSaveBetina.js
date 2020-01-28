@@ -49,3 +49,17 @@ function calculatePriceAfterDiscount() {
                 document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
 }
+var logoIndex = 0;
+showLogos();
+
+function showLogos() {
+    var i;
+    var logos = document.getElementsByClassName("myLogos");
+    for (i = 0; i < logos.length; i++) {
+        logos[i].style.display = "none";
+    }
+    logoIndex++;
+    if (logoIndex > logos.length) {logoIndex = 1}
+    logos[logoIndex-1].style.display = "block";
+    setTimeout(showLogos, 400); // Change image every 2 seconds
+}
