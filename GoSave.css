@@ -3,6 +3,13 @@
 body, html {
     height: 100%;
 }
+#close{
+    font-size: 50px;
+    margin-right: 30px;
+    margin-top: 20px;
+    float: right;
+}
+
 /* BS. Her er alle baggrundsbilleder til alle sider. Alle billeder har en fælles styling,
 ved at have class baseHeaderImage i deres respektive HTML*/
 .headerImage {
@@ -108,7 +115,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     float: left;
     width: 31.5%;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 #mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
