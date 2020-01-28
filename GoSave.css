@@ -88,11 +88,25 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
 #resultDiv{
 }
 #calcareaPercent{
-    background-color: white;
+    background-color: none;
     text-align:center;
-    padding:40px;
-    width:200px;
-    margin-left: 150px;
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+#calcareaPriceChange{
+    background-color: none;
+    text-align:center;
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+#calcareaPrice{
+    background-color: none;
+    text-align:center;
+    float: left;
+    width: 30%;
+    padding: 10px;
 }
 #mainText{
     font-family: "Arial Black", "gadget", "sans-serif";

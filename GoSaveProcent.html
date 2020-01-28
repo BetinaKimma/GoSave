@@ -17,8 +17,55 @@
 <body>
 <!-- Dette er headeren der består af et billede med tekst i midten -->
 <section class="baseHeaderImage headerImagePercent">
-    <div id="calcareaPercent">
-        <p id="mainText" >Udregn hvor mange procent du sparer</p>
+    <div id="calcareaPercent" class="column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="mainText" >Hvor mange procent sparer du?</p>
+        <label class="inputText" for="previousPrice">Førpris</label>
+        <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
+        <label class="inputText" for="newPrice">Nedsat pris</label>
+        <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
+        <br>
+        <br>
+        <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
+        <div id="resultDiv">
+            <p id="besparelsespris">Besparelsen er: <span placeholder="Besparelsen er..." id="besparelse"></span> </p>
+        </div>
+    </div>
+    <div id="calcareaPriceChange" class="column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="mainText" >Hvor mange procent er varen steget?</p>
+        <label class="inputText" for="previousPrice">Førpris</label>
+        <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
+        <label class="inputText" for="newPrice">Nedsat pris</label>
+        <input class="inputField" type="text" id="newPrice" placeholder="Ny pris..." name="newPrice">
+        <br>
+        <br>
+        <button class="resultButton" onclick="udregnProcentvisBesparelse();">Udregn</button>
+        <div id="resultDiv">
+            <p id="besparelsespris">Besparelsen er: <span placeholder="Besparelsen er..." id="besparelse"></span> </p>
+        </div>
+    </div>
+    <div id="calcareaPrice" class="column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="mainText" >Hvad er prisen efter procent rabat?</p>
         <label class="inputText" for="previousPrice">Førpris</label>
         <input class="inputField" type="text" id="previousPrice" placeholder="Førpris..." name="previousPrice">
         <label class="inputText" for="newPrice">Nedsat pris</label>
