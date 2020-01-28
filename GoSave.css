@@ -88,12 +88,16 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
 #resultDiv{
 }
 #calcareaPercent{
-    background-color:transparent;
+    background-color: white;
     text-align:center;
     padding:40px;
     width:200px;
+    margin-left: 150px;
 }
-
+#mainText{
+    font-family: "Arial Black", "gadget", "sans-serif";
+    font-size: x-large;
+}
 .inputText{
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: x-large;
