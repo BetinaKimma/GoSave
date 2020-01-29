@@ -10,8 +10,9 @@ function calculatePercentSaving() {
 
         if (before > after) {
             let saved = before - after;
-            let percentsavings = (saved / before) * 100;
-            document.getElementById("savings").innerHTML = percentsavings.toFixed(2) + "%";
+            let percentSavings = (saved / before) * 100;
+
+            document.getElementById("savings").innerHTML = percentSavings.toFixed(2) + "%";
         }
     }
 }
