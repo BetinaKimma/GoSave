@@ -76,6 +76,12 @@ function showLogos() {
     logos[logoIndex-1].style.display = "block";
     setTimeout(showLogos, 400); // Change image every 2 seconds
 }
+// BS. Dette er funktionen der erstatter den åbne HTML med GoSave(Forsiden)
 function returnToFrontPage() {
     location.replace("GoSave.html");
 }
+// BS. Dette er funktionen der henter dato og tid,
+// kode taget fra W3Schools: https://www.w3schools.com/js/js_date_methods_set.asp fundet den 29/01-20
+var d = new Date();
+d.setFullYear(2020, 0, 29);
+document.getElementById("date").innerHTML = d;
