@@ -1,7 +1,7 @@
-/*Dette er vores CSS */
-/* Denne definerer udseende på header */
+/* BS. Dette er vores CSS */
 body, html {
     height: 100%;
+/* BS. Her bliver vores close buttons udseende defineret hver for sig */
 }
 #closeProcent{
     font-size: 70px;
@@ -43,7 +43,7 @@ body, html {
     background: transparent;
     border: transparent;
 }
-/* Slideshow container */
+/* BS. Her bliver logos container udseende defineret */
 .logos-container {
     max-width: 200px;
     position: relative;
@@ -51,13 +51,11 @@ body, html {
     margin-top: 40px;
     float: right;
 }
-
-/* Hide the images by default */
+/* BS. Denne kode skjuler logos som default */
 .myLogos {
     display: none;
 }
-
-/* Number text (1/3 etc) */
+/* BS. Her bliver logoernes udseende defineret samlet */
 .logo {
     color: black;
     font-size: 100px;
@@ -65,29 +63,23 @@ body, html {
     position: absolute;
     top: 0;
 }
-
-/* Fading animation */
+/* BS. Fading animation gør at logoerne "fader" */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
 /* BS. Her er alle baggrundsbilleder til alle sider. Alle billeder har en fælles styling,
-ved at have class baseHeaderImage i deres respektive HTML*/
-.headerImage {
-    background-image: url('GoSaveHeaderImage_optimized.jpg');
-}
+ved at have class="baseHeaderImage " */
 .baseHeaderImage{
     height: 100%;
     background-position: center;
@@ -95,6 +87,9 @@ ved at have class baseHeaderImage i deres respektive HTML*/
     background-size: cover;
     box-sizing: border-box;
     position: relative;
+}
+.headerImage {
+    background-image: url('GoSaveHeaderImage_optimized.jpg');
 }
 .headerImagePercent{
     background-image: url('GoSaveProcent_optimized.jpg');
@@ -111,8 +106,7 @@ ved at have class baseHeaderImage i deres respektive HTML*/
 .headerImageUserProfile{
     background-image: url("GoSaveListe_optimized.jpg");
 }
-
-/* BS: Dette er teksten midt i billedet på forsiden. Placer tekst i midten af gruppebilledet */
+/* BS. Dette er teksten midt i billedet på "GoSave" siden (forsiden). Placer tekst i midten af gruppebilledet */
 .headerText {
     text-align: center;
     position: absolute;
@@ -123,7 +117,7 @@ ved at have class baseHeaderImage i deres respektive HTML*/
     transform: translate(-50%, -50%);
     color: white;
 }
-/*BS: Dette er stylingen af menuknapperne */
+/*BS. Dette er stylingen af menuknapperne på "GoSave" siden (forsiden) */
 .navbarButtons a{
     position: absolute;
     left: -120px;
@@ -138,10 +132,10 @@ ved at have class baseHeaderImage i deres respektive HTML*/
 .navbarButtons a:hover {
     left: 0;
 }
-/* BS: Herunder er styling af "indhold" af hver enkelt menuknap.
+/* BS. Herunder er styling af "indhold" af hver enkelt menuknap.
 Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker det. Og så har de fået en
- unik afstand til toppen, således at de ikke ligger oven på hinanden, og man kan ligeledes også selv
- justere afstanden mellem knapperne*/
+unik afstand til toppen, således at de ikke ligger oven på hinanden, og man kan ligeledes også selv
+justere afstanden mellem knapperne */
 #procent {
     top: 20px;
     background-color: #aeb0dd;
@@ -162,10 +156,10 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
 }
-#resultDiv{
-}
+/* BS. Her bliver hver "forms" udseende på "procent"siden defineret hver for sig, gjort således,
+da de er lavet som en column, og de skal have en forskellig placering på siden. */
 #calcareaPercent{
-    background-color: none;
+    background: none;
     text-align:center;
     float: left;
     width: 18%;
@@ -174,7 +168,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     margin-left: 80px;
 }
 #calcareaPriceChange{
-    background-color: none;
+    background: none;
     text-align:center;
     float: left;
     width: 18%;
@@ -183,7 +177,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     margin-left: 60px;
 }
 #calcareaPrice{
-    background-color: none;
+    background: none;
     text-align:center;
     float: left;
     width: 18%;
@@ -192,7 +186,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     margin-left: 70px;
 }
 #calcareaPriceOff{
-    background-color: none;
+    background: none;
     text-align: center;
     float: left;
     width: 18%;
@@ -200,7 +194,8 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     margin-top: 180px;
     margin-left: 65px;
 }
-#mainText{
+/* BS. Her bliver teksten ved hver funktion på procentsiden defineret samlet men efter "kategori". */
+.mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: xx-large;
 }
@@ -209,7 +204,6 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     font-size: xx-large;
 }
 .inputField{
-    diplay: block;
     width: 85%;
     padding: .5rem .5rem .5rem;
     border-radius: 50px;
@@ -220,7 +214,6 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     font-size: x-large;
 }
 .resultButton{
-    diplay: block;
     width: 85%;
     padding: .5rem .5rem .5rem;
     border-radius: 50px;
@@ -230,7 +223,7 @@ Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: x-large;
 }
-#besparelsespris{
+.output{
     padding: 9px 25px;
     background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
     border: none;

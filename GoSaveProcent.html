@@ -3,22 +3,21 @@
 <!-- Head start -->
 <head>
     <meta charset="UTF-8">
-    <!-- Dette henviser til vores stylesheet -->
+    <!-- BS. Dette henviser til vores stylesheet -->
     <link rel = "stylesheet"
           type = "text/css"
           href = "GoSave.css" />
-    <!-- Dette er headeren -->
     <title>GoSaveProcent</title>
 </head>
 <!-- Head slut -->
 <!-- Body start -->
 <body>
-<!-- Dette er headeren der består af et billede med tekst i midten -->
+<!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen med tekst i midten -->
 <section class="baseHeaderImage headerImagePercent">
     <button class="fas fa-times" id="closeProcent" onclick="returnToFrontPage()"></button>
-<!-- BS. Dette er feltet for procentudregning -->
+<!-- BS. Dette er formen for procentudregning -->
     <div id="calcareaPercent" class="column">
-        <p id="mainText" >Hvor mange procent sparer du?</p>
+        <p class="mainText" id="mainTextPercent" >Hvor mange procent sparer du?</p>
         <label class="inputText" for="previousPricePercent">Førpris</label>
         <input class="inputField" type="text" id="previousPricePercent" placeholder="Førpris..." name="previousPricePercent">
         <label class="inputText" for="newPricePercent">Nedsat pris</label>
@@ -27,12 +26,12 @@
         <br>
         <button class="resultButton" onclick="calculatePercentSaving();">Udregn</button>
         <div id="resultDivPercent">
-            <p id="besparelsespris">Besparelsen er: <span id="savings"></span></p>
+            <p class="output">Besparelsen er: <span id="savings"></span></p>
         </div>
     </div>
-<!-- BS. Dette er feltet for prisstigning -->
+<!-- BS. Dette er formen for prisstigning -->
     <div id="calcareaPriceChange" class="column">
-        <p id="mainText" >Hvor mange procent er varen steget?</p>
+        <p class="mainText" id="mainTextPriceChange" >Hvor mange procent er varen steget?</p>
         <label class="inputText" for="previousPriceDiff">Førpris</label>
         <input class="inputField" type="text" id="previousPriceDiff" placeholder="Førpris..." name="previousPriceDiff">
         <label class="inputText" for="newPriceDiff">Steget pris</label>
@@ -41,12 +40,12 @@
         <br>
         <button class="resultButton" onclick="calculatePercentDiff();">Udregn</button>
         <div id="resultDivDiff">
-            <p id="besparelsespris">Varen er steget: <span id="difference"></span></p>
+            <p class="output">Varen er steget: <span id="difference"></span></p>
         </div>
     </div>
-<!-- BS. Dette er feltet for pris efter rabat -->
+<!-- BS. Dette er formen for pris efter rabat -->
     <div id="calcareaPrice" class="column">
-        <p id="mainText" >Hvad er prisen efter procent rabat?</p>
+        <p class="mainText" id="mainTextPrice" >Hvad er prisen efter procent rabat?</p>
         <label class="inputText" for="previousPriceDiscount">Førpris</label>
         <input class="inputField" type="text" id="previousPriceDiscount" placeholder="Førpris..." name="previousPriceDiscount">
         <label class="inputText" for="discountPercentage">Procent</label>
@@ -55,12 +54,12 @@
         <br>
         <button class="resultButton" onclick="calculatePriceAfterDiscount();">Udregn</button>
         <div id="resultDivDisc">
-            <p id="besparelsespris">Ny pris er: <span id="discount"></span></p>
+            <p class="output">Ny pris er: <span id="discount"></span></p>
         </div>
     </div>
-    <!-- BS. Dette er feltet for rabatten af en pris -->
+    <!-- BS. Dette er formen for rabatten af en pris -->
     <div id="calcareaPriceOff" class="column">
-        <p id="mainText" >Hvor mange kroner sparer du?</p>
+        <p class="mainText" id="mainTextPriceOff" >Hvor mange kroner sparer du?</p>
         <label class="inputText" for="previousPriceFull">Førpris</label>
         <input class="inputField" type="text" id="previousPriceFull" placeholder="Førpris..." name="previousPriceFull">
         <label class="inputText" for="discountPercentOff">Procent</label>
@@ -69,14 +68,13 @@
         <br>
         <button class="resultButton" onclick="calculatePercentOff();">Udregn</button>
         <div id="resultDivPercentOff">
-            <p id="besparelsespris">Du sparer: <span id="priceOff"></span></p>
+            <p class="output">Du sparer: <span id="priceOff"></span></p>
         </div>
     </div>
 </section>
 </body>
 <!-- Body slut -->
-
-<!-- Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
+<!-- BS. Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
 <script src="https://kit.fontawesome.com/e1859bc0a4.js" crossorigin="anonymous"></script>
 <script src="GoSaveBetina.js"></script>
 </html>
