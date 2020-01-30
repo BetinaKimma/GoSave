@@ -15,6 +15,20 @@
 <!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen -->
 <section class="baseHeaderImage headerImageTaxfree">
     <button class="fas fa-times" id="closeTaxfree" onclick="returnToFrontPage()"></button>
+<!-- Dette er formen for vores funktionen Taxfree tilbagebetaling-->
+    <div id="calcareaTaxfree" class="column">
+        <p class="mainText" id="mainTextTaxfree" >Hvad får du tilbage via TaxFree?</p>
+        <label class="inputText" for="priceBeforeTax" >Total Pris</label>
+        <input class="inputField" type="text" id="priceBeforeTax" placeholder="Total Pris..." name="priceBeforeTax">
+        <label class="inputText" for="newPriceTax">Tax Free</label>
+        <input class="inputField" type="text" id="newPriceTax" placeholder="TaxFree..." name="newPriceTax">
+        <br
+        <br
+        <button class="resultButton" onclick="calculateTaxfreeSaving();">Udregn</button>
+        <div id="resultDivTax">
+            <p class="output">Dette får du tilbage: <span id="taxdiscount"></span></p>
+        </div>
+    </div>
 
 
     <!-- Her skal din kode sættes ind :) -->
