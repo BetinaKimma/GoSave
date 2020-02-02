@@ -160,6 +160,11 @@ justere afstanden mellem knapperne */
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
 }
+#bookShopper {
+    top: 420px;
+    background-color: #aeb0dd;
+    font-family: "Arial Black", "gadget", "sans-serif";
+}
 /* BS. Her bliver hver "forms" udseende på "procent"siden defineret hver for sig, gjort således,
 da de er lavet som en column, og de skal have en forskellig placering på siden. */
 #calcareaPercent{
