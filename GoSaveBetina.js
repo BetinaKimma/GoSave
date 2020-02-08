@@ -1,5 +1,5 @@
-// Dette er vores Javascript
-// Denne funktion åbner en ny side i samme vindue ved tryk på button. en mulig løsning til vores
+// Dette er Javascript lavet af Betina
+
 // BS. Dette er funktionen til beregning af procentvis besparelse. Det er en færdig implementeret funktion.
 function calculatePercentSaving() {
     document.getElementById("resultDivPercent").style.display = "block";
@@ -49,6 +49,7 @@ function calculatePriceAfterDiscount() {
                 document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
 }
+
 // BS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
 function calculatePercentOff() {
     document.getElementById("resultDivPercentOff").style.display = "block";
@@ -62,6 +63,9 @@ function calculatePercentOff() {
         document.getElementById("priceOff").innerHTML = percentOff.toFixed(2) + "Kr";
     }
 }
+
+// BS. Dette er funktionen der får logoer til at køre i loop på GoSave siden.
+// (De logoer der kører nu er forskellige smileys, men de kunne skiftes ud med logoer for butikker.)
 var logoIndex = 0;
 showLogos();
 
@@ -76,12 +80,15 @@ function showLogos() {
     logos[logoIndex-1].style.display = "block";
     setTimeout(showLogos, 400); // Change image every 2 seconds
 }
-// BS. Dette er funktionen der erstatter den åbne HTML med GoSave(Forsiden)
+
+// BS. Dette er funktionen der erstatter den "åbne" HTML med GoSave(Forsiden) Ved tryk på krydset oppe i højre hjørne.
 function returnToFrontPage() {
     location.replace("GoSave.html");
 }
+
 // BS. Dette er funktionen der henter dato og tid,
-// kode taget fra W3Schools: https://www.w3schools.com/js/js_date_methods_set.asp fundet den 29/01-20
+// kode taget fra W3Schools: https://www.w3schools.com/js/js_date_methods_set.asp fundet den 29/01-20.
+// Det er ikke en færdig implementeret funktion, da jeg ikke har kunnet få den til at opdatere dato, men kun tid.
 var d = new Date();
-d.setFullYear(2020, 0, 29);
+d.getFullYear();
 document.getElementById("date").innerHTML = d;
