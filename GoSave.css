@@ -106,6 +106,9 @@ ved at have class="baseHeaderImage " */
 .headerImageUserProfile{
     background-image: url("GoSaveListe_optimized.jpg");
 }
+.headerImageBookShopper{
+    background-image: url("GoSaveBookShopper_optimized.jpg");
+}
 /* BS. Dette er teksten midt i billedet på "GoSave" siden (forsiden). Placer tekst i midten af gruppebilledet */
 .headerText {
     text-align: center;
@@ -117,7 +120,7 @@ ved at have class="baseHeaderImage " */
     transform: translate(-50%, -50%);
     color: white;
 }
-#date{
+#dateOnFront{
     font-size: 22px;
     text-align: center;
 }
@@ -203,7 +206,17 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin-top: 180px;
     margin-left: 65px;
 }
-
+/* BS. Her bliver udseendet på formen på book shopper defineret*/
+#bookShopperForm{
+    background: none;
+    text-align:center;
+    float: left;
+    width: 18%;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 900px;
+    font-size: medium;
+}
 /* Her er formen for TaxFree defineret på siden for TaxFree */
 #calcareaTaxfree{
     background: none;

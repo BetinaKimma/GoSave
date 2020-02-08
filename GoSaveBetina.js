@@ -92,3 +92,13 @@ function returnToFrontPage() {
 var d = new Date();
 d.getFullYear();
 document.getElementById("date").innerHTML = d;
+
+// BS. Dette er funktionen for formen på "book shopper" siden. Her udfyldes navn, telefon og email,
+// er alle felter ikke udfyldt kommer der en alert frem, der beder om at der prøves igen.
+function contactForm() {
+    var x = document.forms["bookShopperForm"]["fname", "phone", "email"].value;
+    if (x == "") {
+        alert("Har du udfyldt alt korrekt? Prøv igen");
+        return false;
+    }
+}

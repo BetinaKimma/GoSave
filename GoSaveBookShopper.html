@@ -12,7 +12,18 @@
 <!-- Head slut -->
 <!-- Body start -->
 <body>
+<!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen med tekst i midten -->
+<section class="baseHeaderImage headerImageBookShopper">
+    <button class="fas fa-times" id="closeProcent" onclick="returnToFrontPage()"></button>
+    <!-- BS. Dette er formen for at blive kontaktet af shopper, med POST method, så sensitiv data ikke kommer i URL -->
+    <form name="bookShopperForm" onsubmit="return contactForm()" method="post">
+        <input type="text" name="fname" placeholder="Navn...">
+        <input type="text" name="phoneNr" placeholder="Telefon...">
+        <input type="text" name="email" placeholder="email...">
+        <input type="submit" value="Submit">
+    </form>
 
+<!-- BS. Dette er menuen i venstre side -->
 <div class="navbarButtons">
     <a href="GoSaveProcent.html" id="procent">Procent<br>rabat</a>
     <a href="GoSaveMaengde.html" id="quantity">Mængde<br>rabat</a>
