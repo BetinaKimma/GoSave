@@ -93,12 +93,71 @@ var d = new Date();
 d.getFullYear();
 document.getElementById("date").innerHTML = d;
 
-// BS. Dette er funktionen for formen på "book shopper" siden. Her udfyldes navn, telefon og email,
+// BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
 // er alle felter ikke udfyldt kommer der en alert frem, der beder om at der prøves igen.
 function contactForm() {
     var x = document.forms["bookShopperForm"]["fname", "phone", "email"].value;
-    if (x == "") {
+    if (x == " ") {
         alert("Har du udfyldt alt korrekt? Prøv igen");
         return false;
     }
 }
+
+// BS. Dette er funktionen for booking af personlig shopper
+class bookPersonalShopper {
+    //constructoren her sørger for at hver instans af bookPersonalShopper får et tomt array ved navn booking tilknyttet
+    // og bliver initialiseret
+    constructor() {
+        this.booking = [];
+    }
+    // add tilføjer det objekt den bliver givet til vores booking array
+    add(costumer) {
+        this.booking.push(costumer);
+    }
+    // showBooking eksekverer hver enkelt kundes showData funktion, samt giver dem et costumerNr som er 1 større end deres
+    // indeks i array'et.
+    showBooking() {
+        console.log("Følgende kunder har booket tid:\n");
+        for (let i = 0; i < this.booking.length; i++) {
+            this.booking[i].showData(i+1, this.booking[i]);
+        }
+    }
+}
+
+class costumer {
+    //constructor indikerer at hver instans af kunde skal have følgende oplysninger:
+    // fornavn, efternavn, telefonnummer, dato og tid.
+    constructor(firstname, lastname, phoneNumber, date, time) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phoneNumber = phoneNumber;
+        this.date = date;
+        this.time = time;
+    }
+    //showData() printer oplysninger om den enkelte instans af costumer samt deres costumerNr.
+    // Dette gøres ud fra de to parametre som funktionen kræver som er et costumerNr og et costumer objekt.
+    showData(costumerNr, costumer) {
+        console.log("Kunde " + costumerNr + ": " + costumer.firstname + " " + costumer.lastname + " - "
+            + costumer.phoneNumber + " - " + costumer.date + " - " + costumer.time)
+    }
+}
+//kunde1 og kunde2 oprettes som nye instanser af vores costumer klasse med de følgende oplysninger
+const costumer1 = new costumer("Jane", "Doe", 12345678, "27 April", 10.00);
+const costumer2 = new costumer("John", "Doe", 87654321, "09 Juni", 11.30);
+
+//shopper oprettes som instans af vores bookPersonligShopper klasse
+let shopper = new bookPersonalShopper();
+
+// add funktionen i shopper eksekveres ved at give den vores to kunder som værdier -
+// og de bliver derfor tilføjet til shopper booking array
+shopper.add(costumer1);
+shopper.add(costumer2);
+
+//shopper visBooking() funktion eksekveres og den printer listen af bookinger
+shopper.showBooking();
+
+/* Output:
+Følgende kunder har booket tid:
+Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
+Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
+ */
