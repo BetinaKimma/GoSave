@@ -87,11 +87,17 @@ function returnToFrontPage() {
 }
 
 // BS. Dette er funktionen der henter dato og tid,
-// kode taget fra W3Schools: https://www.w3schools.com/js/js_date_methods_set.asp fundet den 29/01-20.
-// Det er ikke en færdig implementeret funktion, da jeg ikke har kunnet få den til at opdatere dato, men kun tid.
-var d = new Date();
-d.getFullYear();
-document.getElementById("date").innerHTML = d;
+// kode taget fra W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_string_iso1 og
+// StackOverflow: https://stackoverflow.com/questions/10211145/getting-current-date-and-time-in-javascript
+// fundet den 09/02-20. Det er en færdig implementeret funktion.
+var currentdate = new Date();
+var d = currentdate.getDate() + "/"
+    + (currentdate.getMonth()+1)  + "/"
+    + currentdate.getFullYear() + " @ "
+    + currentdate.getHours() + ":"
+    + currentdate.getMinutes() + ":"
+    + currentdate.getSeconds();
+document.getElementById("dateOnFront").innerHTML = d;
 
 // BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
 // er alle felter ikke udfyldt kommer der en alert frem, der beder om at der prøves igen.
@@ -127,18 +133,18 @@ class bookPersonalShopper {
 class costumer {
     //constructor indikerer at hver instans af kunde skal have følgende oplysninger:
     // fornavn, efternavn, telefonnummer, dato og tid.
-    constructor(firstname, lastname, phoneNumber, date, time) {
+    constructor(firstname, lastname, phoneNumber, agreedDate, time) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.phoneNumber = phoneNumber;
-        this.date = date;
+        this.agreedDate = agreedDate;
         this.time = time;
     }
     //showData() printer oplysninger om den enkelte instans af costumer samt deres costumerNr.
     // Dette gøres ud fra de to parametre som funktionen kræver som er et costumerNr og et costumer objekt.
     showData(costumerNr, costumer) {
         console.log("Kunde " + costumerNr + ": " + costumer.firstname + " " + costumer.lastname + " - "
-            + costumer.phoneNumber + " - " + costumer.date + " - " + costumer.time)
+            + costumer.phoneNumber + " - " + costumer.agreedDate + " - " + costumer.time)
     }
 }
 //kunde1 og kunde2 oprettes som nye instanser af vores costumer klasse med de følgende oplysninger
