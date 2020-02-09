@@ -16,17 +16,17 @@
 <section class="baseHeaderImage headerImageTaxfree">
     <button class="fas fa-times" id="closeTaxfree" onclick="returnToFrontPage()"></button>
 <!-- Dette er formen for vores funktionen Taxfree tilbagebetaling-->
-    <div id="calcareaTaxfree" class="column">
+    <div id="udregnTaxfree" class="column">
         <p class="mainText" id="mainTextTaxfree" >Hvad får du tilbage via TaxFree?</p>
-        <label class="inputText" for="priceBeforeTax" >Total Pris</label>
-        <input class="inputField" type="text" id="priceBeforeTax" placeholder="Total Pris..." name="priceBeforeTax">
-        <label class="inputText" for="newPriceTax">Tax Free</label>
-        <input class="inputField" type="text" id="newPriceTax" placeholder="TaxFree..." name="newPriceTax">
+        <label class="inputText" for="prisFørTax" >Total Pris</label>
+        <input class="inputField" type="text" id="prisFørTax" placeholder="Total Pris..." name="prisFørTax">
+        <label class="inputText" for="nyPrisTax">Tax Free</label>
+        <input class="inputField" type="text" id="nyPrisTax" placeholder="TaxFree..." name="nyPrisTax">
         <br
         <br
-        <button class="resultButton" onclick="calculateTaxfreeSaving();">Udregn</button>
-        <div id="resultDivTax">
-            <p class="output">Dette får du tilbage: <span id="taxdiscount"></span></p>
+        <button class="resultButton" onclick="udregnTaxfreeSaving();">Udregn</button>
+        <div id="resultatDivTax">
+            <p class="output">Dette får du tilbage: <span id="taxrabat"></span></p>
         </div>
     </div>
 

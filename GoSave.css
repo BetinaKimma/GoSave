@@ -218,7 +218,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     font-size: medium;
 }
 /* Her er formen for TaxFree defineret på siden for TaxFree */
-#calcareaTaxfree{
+#udregnTaxfree{
     background: none;
     text-align: center;
     float: left;

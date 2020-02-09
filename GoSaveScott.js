@@ -1,17 +1,17 @@
 //Dette er vores JS for TaxFree og Meangde
 //Dette er funktionen til beregning af pris efter TaxFree procenten
-function calculateTaxfreeSaving() {
-    document.getElementById(elementid: "resultDivTax").style.display = "block";
+function udregnTaxfreeSaving() {
+    document.getElementById(elementid: "resultatDivTax").style.display = "block";
 
-    let before = document.getElementById(elementid: "priceBeforeTax").value;
-    let taxfree = document.getElementById(elementid "newPriceTax").value;
+    let før = document.getElementById(elementid: "prisFørTax").value;
+    let taxfree = document.getElementById(elementid "nyPrisTax").value;
     if (!isNaN(before) && !isNaN(taxfree)) {
 
-            let taxFreePrice = before / 100;
-            let taxFreeSaving = taxfree * taxFreePrice;
-            let taxFreeDiscount = before - taxFreeSaving;
+            let taxFreePris = før / 100;
+            let taxFreeSaving = taxfree * taxFreePris;
+            let taxFreeRabat = før - taxFreeSaving;
 
-            document.getElementById(elementid: "taxdiscount").innerHTML = taxFreeDiscount.toFixed(fractionDigits: 2) + "kr";
+            document.getElementById(elementid: "taxrabat").innerHTML = taxFreeRabat.toFixed(fractionDigits: 2) + "kr";
         }
 
     }
