@@ -129,7 +129,6 @@ class bookPersonalShopper {
         }
     }
 }
-
 class costumer {
     //constructor indikerer at hver instans af kunde skal have følgende oplysninger:
     // fornavn, efternavn, telefonnummer, dato og tid.
@@ -168,9 +167,6 @@ Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
 Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
  */
 
-
-
-
 // BS. Dette er funktionen for at shopper kan gemme items i en liste
 class userWishList {
     //constructoren her sørger for at hver instans af userWishlist får et tomt array ved navn list tilknyttet
@@ -191,7 +187,6 @@ class userWishList {
         }
     }
 }
-
 class item {
     //constructor indikerer at hver instans af wish skal have følgende oplysninger:
     // butiksnavn, detaljer, farve, størrelse og pris.
@@ -223,7 +218,6 @@ want.add(item2);
 
 //want showList() funktion eksekveres og den printer listen
 want.showList();
-
 /* Output:
 Dette er din ønskeliste:
 Jeg ønsker mig 1: Fra Kvindemode - Diana kjole i Rød / Str.: Medium Til 400 Kr.
