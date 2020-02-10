@@ -7,15 +7,25 @@ function calculatePercentSaving() {
     let before = document.getElementById("previousPricePercent").value;
     let after = document.getElementById("newPricePercent").value;
     if (!isNaN(before) && !isNaN(after)) {
-
-        if (before > after) {
+        if (before > after)
+        {
             let saved = before - after;
             let percentSavings = (saved / before) * 100;
 
             document.getElementById("savings").innerHTML = percentSavings.toFixed(2) + "%";
         }
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
+
+/*else if (isNaN(before) && isNaN(after)) {
+    alert ("Brug kun hele tal! Prøv igen : )");
+    return false;
+}
+*/
+
 
 // BS. Dette er funktionen til beregning af procentvis stigning. Det er en færdig implementeret funktion.
 function calculatePercentDiff() {
@@ -31,6 +41,9 @@ function calculatePercentDiff() {
 
             document.getElementById("difference").innerHTML = percentDifference.toFixed(2) + "%";
         }
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
     }
 }
 
@@ -48,6 +61,9 @@ function calculatePriceAfterDiscount() {
 
                 document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
@@ -62,6 +78,9 @@ function calculatePercentOff() {
 
         document.getElementById("priceOff").innerHTML = percentOff.toFixed(2) + "Kr";
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen der får logoer til at køre i loop på GoSave siden.
@@ -72,6 +91,9 @@ showLogos();
 function showLogos() {
     var i;
     var logos = document.getElementsByClassName("myLogos");
+    if (logos.length == 0)
+        return;
+
     for (i = 0; i < logos.length; i++) {
         logos[i].style.display = "none";
     }
@@ -97,16 +119,23 @@ var d = currentdate.getDate() + "/"
     + currentdate.getHours() + ":"
     + currentdate.getMinutes() + ":"
     + currentdate.getSeconds();
-document.getElementById("dateOnFront").innerHTML = d;
+if (document.getElementById("dateOnFront") != null)
+{
+    document.getElementById("dateOnFront").innerHTML = d;
+}
 
 // BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
-// er alle felter ikke udfyldt kommer der en alert frem, der beder om at der prøves igen.
+// disse bliver gemt som string i LocalStorage ved methoden JSON.stringify.
 function contactForm() {
-    var x = document.forms["bookShopperForm"]["fname", "phone", "email"].value;
-    if (x == " ") {
-        alert("Har du udfyldt alt korrekt? Prøv igen");
-        return false;
-    }
+    var fname = document.getElementById('fname').value;
+    var phone = document.getElementById('phone').value;
+    var email = document.getElementById('email').value;
+    var contactForm =  {
+        fname : fname,
+        phone : phone,
+        email : email
+    };
+    localStorage['contactForm'] = JSON.stringify(contactForm);
 }
 
 // BS. Dette er funktionen for booking af personlig shopper
