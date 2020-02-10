@@ -205,8 +205,8 @@ class item {
     //showItem() printer oplysninger om den enkelte instans af item samt deres itemNr.
     // Dette gøres ud fra de to parametre som funktionen kræver som er et itemNr og et item objekt.
     showItem(itemNr, item) {
-        console.log("Jeg ønsker mig " + itemNr + ": Fra " + item.storeName + " - " + item.details + " i " + item.color + " Str.: "
-            + item.size + " Til " + item.price + " Kr")
+        console.log("Jeg ønsker mig " + itemNr + ": Fra " + item.storeName + " - " + item.details + " i " + item.color + " / Str.: "
+            + item.size + " Til " + item.price + " Kr.")
     }
 }
 //item1 og item2 oprettes som nye instanser af vores item klasse med de følgende oplysninger
@@ -223,3 +223,9 @@ want.add(item2);
 
 //want showList() funktion eksekveres og den printer listen
 want.showList();
+
+/* Output:
+Dette er din ønskeliste:
+Jeg ønsker mig 1: Fra Kvindemode - Diana kjole i Rød / Str.: Medium Til 400 Kr.
+Jeg ønsker mig 2: Fra Herremode - David Jeans i Blå / Str.: Large Til 600 Kr.
+ */
