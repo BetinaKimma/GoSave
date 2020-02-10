@@ -7,13 +7,16 @@ function calculatePercentSaving() {
     let before = document.getElementById("previousPricePercent").value;
     let after = document.getElementById("newPricePercent").value;
     if (!isNaN(before) && !isNaN(after)) {
-
-        if (before > after) {
+        if (before > after)
+        {
             let saved = before - after;
             let percentSavings = (saved / before) * 100;
 
             document.getElementById("savings").innerHTML = percentSavings.toFixed(2) + "%";
         }
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
     }
 }
 
@@ -32,6 +35,9 @@ function calculatePercentDiff() {
             document.getElementById("difference").innerHTML = percentDifference.toFixed(2) + "%";
         }
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen til beregning af pris efter en procentrabat. Det er en færdig implementeret funktion.
@@ -48,6 +54,9 @@ function calculatePriceAfterDiscount() {
 
                 document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
@@ -62,6 +71,9 @@ function calculatePercentOff() {
 
         document.getElementById("priceOff").innerHTML = percentOff.toFixed(2) + "Kr";
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen der får logoer til at køre i loop på GoSave siden.
@@ -72,6 +84,9 @@ showLogos();
 function showLogos() {
     var i;
     var logos = document.getElementsByClassName("myLogos");
+    if (logos.length == 0)
+        return;
+
     for (i = 0; i < logos.length; i++) {
         logos[i].style.display = "none";
     }
@@ -97,16 +112,23 @@ var d = currentdate.getDate() + "/"
     + currentdate.getHours() + ":"
     + currentdate.getMinutes() + ":"
     + currentdate.getSeconds();
-document.getElementById("dateOnFront").innerHTML = d;
+if (document.getElementById("dateOnFront") != null)
+{
+    document.getElementById("dateOnFront").innerHTML = d;
+}
 
 // BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
-// er alle felter ikke udfyldt kommer der en alert frem, der beder om at der prøves igen.
+// disse bliver gemt som string i LocalStorage ved methoden JSON.stringify.
 function contactForm() {
-    var x = document.forms["bookShopperForm"]["fname", "phone", "email"].value;
-    if (x == " ") {
-        alert("Har du udfyldt alt korrekt? Prøv igen");
-        return false;
-    }
+    var fname = document.getElementById("fname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var contactForm =  {
+        fname : fname,
+        phone : phone,
+        email : email
+    };
+    localStorage["contactForm"] = JSON.stringify(contactForm);
 }
 
 // BS. Dette er funktionen for booking af personlig shopper
@@ -129,7 +151,6 @@ class bookPersonalShopper {
         }
     }
 }
-
 class costumer {
     //constructor indikerer at hver instans af kunde skal have følgende oplysninger:
     // fornavn, efternavn, telefonnummer, dato og tid.
@@ -168,9 +189,6 @@ Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
 Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
  */
 
-
-
-
 // BS. Dette er funktionen for at shopper kan gemme items i en liste
 class userWishList {
     //constructoren her sørger for at hver instans af userWishlist får et tomt array ved navn list tilknyttet
@@ -191,7 +209,6 @@ class userWishList {
         }
     }
 }
-
 class item {
     //constructor indikerer at hver instans af wish skal have følgende oplysninger:
     // butiksnavn, detaljer, farve, størrelse og pris.
@@ -223,7 +240,6 @@ want.add(item2);
 
 //want showList() funktion eksekveres og den printer listen
 want.showList();
-
 /* Output:
 Dette er din ønskeliste:
 Jeg ønsker mig 1: Fra Kvindemode - Diana kjole i Rød / Str.: Medium Til 400 Kr.
