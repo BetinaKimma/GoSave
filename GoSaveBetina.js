@@ -20,13 +20,6 @@ function calculatePercentSaving() {
     }
 }
 
-/*else if (isNaN(before) && isNaN(after)) {
-    alert ("Brug kun hele tal! Prøv igen : )");
-    return false;
-}
-*/
-
-
 // BS. Dette er funktionen til beregning af procentvis stigning. Det er en færdig implementeret funktion.
 function calculatePercentDiff() {
     document.getElementById("resultDivDiff").style.display = "block";
@@ -127,15 +120,15 @@ if (document.getElementById("dateOnFront") != null)
 // BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
 // disse bliver gemt som string i LocalStorage ved methoden JSON.stringify.
 function contactForm() {
-    var fname = document.getElementById('fname').value;
-    var phone = document.getElementById('phone').value;
-    var email = document.getElementById('email').value;
+    var fname = document.getElementById("fname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
     var contactForm =  {
         fname : fname,
         phone : phone,
         email : email
     };
-    localStorage['contactForm'] = JSON.stringify(contactForm);
+    localStorage["contactForm"] = JSON.stringify(contactForm);
 }
 
 // BS. Dette er funktionen for booking af personlig shopper
