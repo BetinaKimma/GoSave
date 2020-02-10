@@ -167,3 +167,59 @@ Følgende kunder har booket tid:
 Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
 Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
  */
+
+
+
+
+// BS. Dette er funktionen for at shopper kan gemme items i en liste
+class userWishList {
+    //constructoren her sørger for at hver instans af userWishlist får et tomt array ved navn list tilknyttet
+    // og bliver initialiseret
+    constructor() {
+        this.list = [];
+    }
+    // add tilføjer det objekt den bliver givet til vores list array
+    add(item) {
+        this.list.push(item);
+    }
+    // showList eksekverer hver enkelt item i showItem funktion, samt giver dem et itemNr som er 1 større end deres
+    // indeks i array'et.
+    showList() {
+        console.log("Dette er din ønskeliste:\n");
+        for (let i = 0; i < this.list.length; i++) {
+            this.list[i].showItem(i+1, this.list[i]);
+        }
+    }
+}
+
+class item {
+    //constructor indikerer at hver instans af wish skal have følgende oplysninger:
+    // butiksnavn, detaljer, farve, størrelse og pris.
+    constructor(storeName, details, color, size, price) {
+        this.storeName = storeName;
+        this.details = details;
+        this.color = color;
+        this.size = size;
+        this.price = price;
+    }
+    //showItem() printer oplysninger om den enkelte instans af item samt deres itemNr.
+    // Dette gøres ud fra de to parametre som funktionen kræver som er et itemNr og et item objekt.
+    showItem(itemNr, item) {
+        console.log("Jeg ønsker mig " + itemNr + ": Fra " + item.storeName + " - " + item.details + " i " + item.color + " Str.: "
+            + item.size + " Til " + item.price + " Kr")
+    }
+}
+//item1 og item2 oprettes som nye instanser af vores item klasse med de følgende oplysninger
+const item1 = new item("Kvindemode", "Diana Kjole", "Rød", "Medium", 400);
+const item2 = new item("Herremode", "David Jeans", "Blå", "Large", 600);
+
+//want oprettes som instans af vores wishList klasse
+let want = new userWishList();
+
+// add funktionen i want eksekveres ved at give den vores to item som værdier -
+// og de bliver derfor tilføjet til want list array
+want.add(item1);
+want.add(item2);
+
+//want showList() funktion eksekveres og den printer listen
+want.showList();
