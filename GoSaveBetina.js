@@ -131,7 +131,8 @@ function contactForm() {
     localStorage["contactForm"] = JSON.stringify(contactForm);
 }
 
-// BS. Dette er funktionen for booking af personlig shopper
+// BS. Dette er funktionen for booking af personlig shopper. Der er ikke lavet HTML til denne funktion.
+// Den virker i console.
 class bookPersonalShopper {
     //constructoren her sørger for at hver instans af bookPersonalShopper får et tomt array ved navn booking tilknyttet
     // og bliver initialiseret
@@ -189,7 +190,8 @@ Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
 Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
  */
 
-// BS. Dette er funktionen for at shopper kan gemme items i en liste
+// BS. Dette er funktionen for at shopper kan gemme items i en liste. Der er ikke lavet HTML til denne funktion.
+// Funktionen virker i console
 class userWishList {
     //constructoren her sørger for at hver instans af userWishlist får et tomt array ved navn list tilknyttet
     // og bliver initialiseret
