@@ -218,10 +218,8 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     font-size: medium;
 }
 
-
-
-/* SB. Design af Taxfree, Valuta og Maengde */
-/* SB. Her er formen for TaxFree defineret på siden for TaxFree */
+/* Design af Taxfree, Valuta og Maengde */
+/* Her er formen for TaxFree defineret på siden for TaxFree */
 #udregnTaxfree{
     background: none;
     text-align: center;
@@ -231,7 +229,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin-top: 200px;
     margin-left: 65px;
 }
-/* SB. Her er formen for Maengde defineret på siden for Maengderabat */
+/* Her er formen for Maengde defineret på siden for Maengderabat */
 #udregnMaengdeRabat{
     background: none;
     text-align: center;
@@ -242,7 +240,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin-left: 65px;
 }
 
-/* SB. Her er formen for Valuta på siden for Taxfree */
+/* Her er formen for Valuta på siden for Taxfree */
 #udregnValuta{
     background: none;
     text-align: center;
@@ -252,8 +250,6 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin-top: 200px;
     margin-left: 65px;
 }
-
-
 /* BS. Her bliver teksten ved hver funktion på procentsiden defineret samlet men efter "kategori". */
 .mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
@@ -273,6 +269,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin: auto;
     font-size: x-large;
 }
+/* BS. Her bliver udregn knappen stylet */
 .resultButton{
     width: 85%;
     padding: .5rem .5rem .5rem;
@@ -283,6 +280,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: x-large;
 }
+/* BS. Dette er styling af output feltet*/
 .output{
     padding: 9px 25px;
     background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
@@ -345,6 +343,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     align-items: center;
 }
 
-#newUserButton{
+#newUserButton {
     background-color: #31b3cd;
+}
 
