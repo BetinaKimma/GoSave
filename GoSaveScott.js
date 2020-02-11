@@ -1,6 +1,6 @@
-//Dette er vores JS for TaxFree og Meangderabat. lavet af Scott
+//Dette er vores JS for TaxFree og Meangderabat. lavet af Scott.
 
-//SB. Dette er funktionen til beregning af pris efter TaxFree procenten
+//Dette er funktionen til beregning af pris efter TaxFree procenten.
 function udregnTaxfreeSaving() {
     document.getElementById("resultatDivTax").style.display = "block";
 
@@ -18,7 +18,7 @@ function udregnTaxfreeSaving() {
         alert("Hovsa! Prøv igen med hele tal");
     }
 }
-    //SB. Dette er funktionen til beregning af mængderabat
+    //Dette er funktionen til beregning af mængderabat.
 function udregnMaengdeRabat() {
     document.getElementById("resultatDivMaengde").style.diplay = "block";
     let antal = document.getElementById("antalProdukter").value;
@@ -33,5 +33,17 @@ function udregnMaengdeRabat() {
     }
     else {
         alert("Hovsa! Prøv igen med hele tal");
+    }
+}
+
+//Dette er funktionen til beregning af valuta (DKK til EUR).
+function udregnValuta() {
+    document.getElementById("resultatDivValuta").style.display = "block";
+    let dKK = document.getElementById("danskDKK").value;
+    if (!isNaN(dKK)) {
+
+        let eurValuta = dKK * 7.5;
+
+        document.getElementById("valuta").innerHTML = eurValuta.toFixed(2) + "€";
     }
 }

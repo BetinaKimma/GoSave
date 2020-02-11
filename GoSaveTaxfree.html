@@ -16,7 +16,7 @@
 <section class="baseHeaderImage headerImageTaxfree">
     <button class="fas fa-times" id="closeTaxfree" onclick="returnToFrontPage()"></button>
 
-<!-- Dette er formen for vores funktionen Taxfree tilbagebetaling-->
+<!-- Dette er formen for vores funktion Taxfree -->
     <div id="udregnTaxfree" class="column">
         <p class="mainText" id="mainTextTaxfree" >Hvad får du tilbage via TaxFree?</p>
         <label class="inputText" for="prisFørTax" >Total Pris</label>
@@ -31,6 +31,18 @@
         </div>
     </div>
 
+    <!-- Dette er formen for vores funktion Valuta -->
+    <div id="udregnValuta" class="column">
+        <p class="mainText" id="mainTextValuta" >Omregn til Euro</p>
+        <label class="inputText" for="danskDK" >Pris i DKK</label>
+        <input class="inputField" type="text" id="danskDK" placeholder="KR..." name="danskDK">
+        <br
+        <br
+            <button class="resultButton" onclick="udregnValuta">Udregn</button>
+        <div id="resultatDivValuta">
+            <p class="output">Pris i Euro: <span id="valuta"></span></p>
+        </div>
+    </div>
 
 
     <div class="navbarButtons">
