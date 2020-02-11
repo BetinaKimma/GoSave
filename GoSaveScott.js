@@ -8,14 +8,16 @@ function udregnTaxfreeSaving() {
     let taxfree = document.getElementById("nyPrisTax").value;
     if (!isNaN(foer) && !isNaN(taxfree)) {
 
-            let taxFreePris = foer / 100;
-            let taxFreeSaving = taxfree * taxFreePris;
-            let taxFreeRabat = foer - taxFreeSaving;
+        let taxFreePris = foer / 100;
+        let taxFreeSaving = taxfree * taxFreePris;
+        let taxFreeRabat = foer - taxFreeSaving;
 
-            document.getElementById("taxrabat").innerHTML = taxFreeRabat.toFixed(2) + "kr";
-        }
+        document.getElementById("taxrabat").innerHTML = taxFreeRabat.toFixed(2) + "kr";
     }
-
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
+}
     //SB. Dette er funktionen til beregning af mængderabat
 function udregnMaengdeRabat() {
     document.getElementById("resultatDivMaengde").style.diplay = "block";
@@ -28,5 +30,8 @@ function udregnMaengdeRabat() {
         let maengdeRabat = antalBetaling / antal;
 
         document.getElementById("maengderabat").innerHTML = maengdeRabat.toFixed(2) + "Kr";
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
     }
 }
