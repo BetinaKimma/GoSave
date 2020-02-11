@@ -1,6 +1,6 @@
 
 function brugernavn() {
-    brugernavn.push(firstname.value);
+    brugernavn.push(brugernavn().value);
     localStorage.setItem('brugernavn', brugernavn.value);
     alert('En ny bruger er logget på');
     console.log(brugernavn());
