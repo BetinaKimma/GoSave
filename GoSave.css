@@ -269,3 +269,55 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: x-large;
 }
+
+/*Dette definerer udseenet på brugerprofilen */
+#Brugerprofil {
+    background-color: white;
+    max-width: 40%;
+    Margin: 5rem auto;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(0deg, rgba(78, 135, 148, 1) 0%, rgba(21, 102, 210, 1) 87%);
+    border-radius: 10px;
+}
+
+#brugernavn {
+    diplay: block;
+    width: 45%;
+    padding: .5rem .5rem .5rem;
+    border-radius: 50px;
+    font-family: sans-serif, Montserrat;
+    border: 0;
+    background: linear-gradient(0deg, rgba(233,248,251,1) 0%, rgba(196,214,218,1) 100%);
+    margin: auto;
+}
+
+
+#Adgangskode {
+    diplay: block;
+    width: 48%;
+    padding: .5rem .5rem .5rem;
+    border-radius: 50px;
+    font-family: sans-serif, Montserrat;
+    border: 0;
+    background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
+    margin: auto;
+}
+
+#newUserButton {
+    padding: 9px 25px;
+    background-color: #31b3cd;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 1rem 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#newUserButton{
+    background-color: #31b3cd;
+
