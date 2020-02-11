@@ -1,17 +1,52 @@
-//Dette er vores JS for TaxFree og Meangde
-//Dette er funktionen til beregning af pris efter TaxFree procenten
+//Dette er vores JS for TaxFree, Valuta og Meangderabat. lavet af Scott.
+
+//Dette er funktionen til beregning af pris efter TaxFree procenten.
 function udregnTaxfreeSaving() {
-    document.getElementById(elementid: "resultatDivTax").style.display = "block";
+    document.getElementById("resultatDivTax").style.display = "block";
 
-    let før = document.getElementById(elementid: "prisFørTax").value;
-    let taxfree = document.getElementById(elementid "nyPrisTax").value;
-    if (!isNaN(before) && !isNaN(taxfree)) {
+    let foer = document.getElementById("prisFørTax").value;
+    let taxfree = document.getElementById("nyPrisTax").value;
+    if (!isNaN(foer) && !isNaN(taxfree)) {
 
-            let taxFreePris = før / 100;
-            let taxFreeSaving = taxfree * taxFreePris;
-            let taxFreeRabat = før - taxFreeSaving;
+        let taxFreePris = foer / 100;
+        let taxFreeSaving = taxfree * taxFreePris;
+        let taxFreeRabat = foer - taxFreeSaving;
 
-            document.getElementById(elementid: "taxrabat").innerHTML = taxFreeRabat.toFixed(fractionDigits: 2) + "kr";
-        }
-
+        document.getElementById("taxrabat").innerHTML = taxFreeRabat.toFixed(2) + "kr";
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
+}
+    //Dette er funktionen til beregning af mængderabat.
+function udregnMaengdeRabat() {
+    document.getElementById("resultatDivMaengde").style.diplay = "block";
+    let antal = document.getElementById("antalProdukter").value;
+    let foer = document.getElementById("stykPrisFørR").value;
+    let maengderabat = document.getElementById("antalBetaler").value;
+    if (!isNaN(antal) && !isNaN(foer) && !isNaN(maengderabat)) {
+
+        let antalBetaling = maengderabat * foer;
+        let maengdeRabat = antalBetaling / antal;
+
+        document.getElementById("maengderabat").innerHTML = maengdeRabat.toFixed(2) + "Kr";
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
+}
+
+//Dette er funktionen til beregning af valuta (DKK til EUR).
+function udregnValuta() {
+    document.getElementById("resultatDivValuta").style.display = "block";
+    let dKK = document.getElementById("danskDKK").value;
+    if (!isNaN(dKK)) {
+
+        let eurValuta = dKK * 7.5;
+
+        document.getElementById("valuta").innerHTML = eurValuta.toFixed(2) + "€";
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
+}
