@@ -220,8 +220,8 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
 
 
 
-/* Design af Taxfree, Valuta og Maengde */
-/* Her er formen for TaxFree defineret på siden for TaxFree */
+/* SB. Design af Taxfree, Valuta og Maengde */
+/* SB. Her er formen for TaxFree defineret på siden for TaxFree */
 #udregnTaxfree{
     background: none;
     text-align: center;
@@ -231,7 +231,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin-top: 200px;
     margin-left: 65px;
 }
-/* Her er formen for Maengde defineret på siden for Maengderabat */
+/* SB. Her er formen for Maengde defineret på siden for Maengderabat */
 #udregnMaengdeRabat{
     background: none;
     text-align: center;
@@ -242,7 +242,7 @@ da de er lavet som en column, og de skal have en forskellig placering på siden.
     margin-left: 65px;
 }
 
-/* Her er formen for Valuta på siden for Taxfree */
+/* SB. Her er formen for Valuta på siden for Taxfree */
 #udregnValuta{
     background: none;
     text-align: center;
