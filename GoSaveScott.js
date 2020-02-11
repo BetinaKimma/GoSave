@@ -1,4 +1,4 @@
-//Dette er vores JS for TaxFree og Meangderabat. lavet af Scott.
+//Dette er vores JS for TaxFree, Valuta og Meangderabat. lavet af Scott.
 
 //Dette er funktionen til beregning af pris efter TaxFree procenten.
 function udregnTaxfreeSaving() {
@@ -45,5 +45,8 @@ function udregnValuta() {
         let eurValuta = dKK * 7.5;
 
         document.getElementById("valuta").innerHTML = eurValuta.toFixed(2) + "€";
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
     }
 }
