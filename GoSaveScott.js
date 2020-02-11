@@ -10,9 +10,8 @@ function udregnTaxfreeSaving() {
 
         let taxFreePris = foer / 100;
         let taxFreeSaving = taxfree * taxFreePris;
-        let taxFreeRabat = foer - taxFreeSaving;
 
-        document.getElementById("taxrabat").innerHTML = taxFreeRabat.toFixed(2) + "kr";
+        document.getElementById("taxrabat").innerHTML = taxFreeSaving.toFixed(2) + "kr";
     }
     else {
         alert("Hovsa! Prøv igen med hele tal");
