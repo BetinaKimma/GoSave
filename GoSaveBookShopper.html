@@ -12,17 +12,16 @@
 <!-- Head slut -->
 <!-- Body start -->
 <body>
-<!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen med tekst i midten -->
+<!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen -->
 <section class="baseHeaderImage headerImageBookShopper">
     <button class="fas fa-times" id="closeProcent" onclick="returnToFrontPage()"></button>
-    <!-- BS. Dette er formen for at blive kontaktet af shopper, med POST method, så sensitiv data ikke kommer i URL -->
+    <!-- BS. Dette er formen for at blive kontaktet af shopper -->
     <form name="bookShopperForm" onsubmit="return contactForm()" method="post" id="contactCostumer">
         <input type="text" name="fname"  id="fname" placeholder="Navn...">
         <input type="text" name="phoneNr" id="phone" placeholder="Telefon...">
         <input type="text" name="email" id="email" placeholder="email...">
         <input type="submit" value="Submit">
     </form>
-
 <!-- BS. Dette er menuen i venstre side -->
 <div class="navbarButtons">
     <a href="GoSaveProcent.html" id="procent">Procent<br>rabat</a>
@@ -31,6 +30,7 @@
     <a href="GoSaveLogInd.html" id="signIn">Bruger<br>log ind</a>
     <a href="GoSaveBookShopper.html" id="bookShopper">Book<br>shopper</a>
 </div>
+</section>
 </body>
 <!-- Body slut -->
 <!-- BS. Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
