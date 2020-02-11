@@ -219,6 +219,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin-left: 900px;
     font-size: medium;
 }
+
 /* Design af Taxfree, Valuta og Maengde */
 /* Her er formen for TaxFree defineret på siden for TaxFree */
 #udregnTaxfree{
@@ -240,6 +241,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin-top: 200px;
     margin-left: 65px;
 }
+
 /* Her er formen for Valuta på siden for Taxfree */
 #udregnValuta{
     background: none;
