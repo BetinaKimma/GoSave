@@ -1,17 +1,29 @@
-//Dette er vores JS for TaxFree og Meangde
+//Dette er vores JS for TaxFree og Meangderabat
 //Dette er funktionen til beregning af pris efter TaxFree procenten
-function calculateTaxfreeSaving() {
-    document.getElementById(elementid: "resultDivTax").style.display = "block";
+function udregnTaxfreeSaving() {
+    document.getElementById(elementid: "resultatDivTax").style.display = "block";
 
-    let before = document.getElementById(elementid: "priceBeforeTax").value;
-    let taxfree = document.getElementById(elementid "newPriceTax").value;
-    if (!isNaN(before) && !isNaN(taxfree)) {
+    let foer = document.getElementById(elementid: "prisFørTax").value;
+    let taxfree = document.getElementById(elementid "nyPrisTax").value;
+    if (!isNaN(foer) && !isNaN(taxfree)) {
 
-            let taxFreePrice = before / 100;
-            let taxFreeSaving = taxfree * taxFreePrice;
-            let taxFreeDiscount = before - taxFreeSaving;
+            let taxFreePris = foer / 100;
+            let taxFreeSaving = taxfree * taxFreePris;
+            let taxFreeRabat = foer - taxFreeSaving;
 
-            document.getElementById(elementid: "taxdiscount").innerHTML = taxFreeDiscount.toFixed(fractionDigits: 2) + "kr";
+            document.getElementById(elementid: "taxrabat").innerHTML = taxFreeRabat.toFixed(fractionDigits: 2) + "kr";
         }
 
     }
+
+    //Dette er funktionen til beregning af mængderabat
+function udregnMaengdeRabat() {
+    document.getElementById(elementid: "resultatDivMaengde").style.diplay = "block";
+    let antal = document.getElementById(elementid: "antalProdukter").value;
+    let foer = document.getElementById(elementid: "stykPrisFørR").value;
+    let maengderabat = document.getElementById(elementid: "stykPrisEfterR").value;
+    if (!isNaN(foer) && !isNaN(maengderabat) && !isNaN(antal)) {
+
+        let  = foer /
+    }
+}

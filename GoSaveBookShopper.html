@@ -16,10 +16,10 @@
 <section class="baseHeaderImage headerImageBookShopper">
     <button class="fas fa-times" id="closeProcent" onclick="returnToFrontPage()"></button>
     <!-- BS. Dette er formen for at blive kontaktet af shopper, med POST method, så sensitiv data ikke kommer i URL -->
-    <form name="bookShopperForm" onsubmit="return contactForm()" method="post">
-        <input type="text" name="fname" placeholder="Navn...">
-        <input type="text" name="phoneNr" placeholder="Telefon...">
-        <input type="text" name="email" placeholder="email...">
+    <form name="bookShopperForm" onsubmit="return contactForm()" method="post" id="contactCostumer">
+        <input type="text" name="fname"  id="fname" placeholder="Navn...">
+        <input type="text" name="phoneNr" id="phone" placeholder="Telefon...">
+        <input type="text" name="email" id="email" placeholder="email...">
         <input type="submit" value="Submit">
     </form>
 

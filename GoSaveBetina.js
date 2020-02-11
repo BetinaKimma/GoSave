@@ -7,13 +7,16 @@ function calculatePercentSaving() {
     let before = document.getElementById("previousPricePercent").value;
     let after = document.getElementById("newPricePercent").value;
     if (!isNaN(before) && !isNaN(after)) {
-
-        if (before > after) {
+        if (before > after)
+        {
             let saved = before - after;
             let percentSavings = (saved / before) * 100;
 
             document.getElementById("savings").innerHTML = percentSavings.toFixed(2) + "%";
         }
+    }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
     }
 }
 
@@ -32,6 +35,9 @@ function calculatePercentDiff() {
             document.getElementById("difference").innerHTML = percentDifference.toFixed(2) + "%";
         }
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen til beregning af pris efter en procentrabat. Det er en færdig implementeret funktion.
@@ -48,6 +54,9 @@ function calculatePriceAfterDiscount() {
 
                 document.getElementById("discount").innerHTML = discountPrice.toFixed(2) + "Kr";
             }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
@@ -62,6 +71,9 @@ function calculatePercentOff() {
 
         document.getElementById("priceOff").innerHTML = percentOff.toFixed(2) + "Kr";
     }
+    else {
+        alert("Hovsa! Prøv igen med hele tal");
+    }
 }
 
 // BS. Dette er funktionen der får logoer til at køre i loop på GoSave siden.
@@ -72,6 +84,9 @@ showLogos();
 function showLogos() {
     var i;
     var logos = document.getElementsByClassName("myLogos");
+    if (logos.length == 0)
+        return;
+
     for (i = 0; i < logos.length; i++) {
         logos[i].style.display = "none";
     }
@@ -97,16 +112,23 @@ var d = currentdate.getDate() + "/"
     + currentdate.getHours() + ":"
     + currentdate.getMinutes() + ":"
     + currentdate.getSeconds();
-document.getElementById("dateOnFront").innerHTML = d;
+if (document.getElementById("dateOnFront") != null)
+{
+    document.getElementById("dateOnFront").innerHTML = d;
+}
 
 // BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
-// er alle felter ikke udfyldt kommer der en alert frem, der beder om at der prøves igen.
+// disse bliver gemt som string i LocalStorage ved methoden JSON.stringify.
 function contactForm() {
-    var x = document.forms["bookShopperForm"]["fname", "phone", "email"].value;
-    if (x == " ") {
-        alert("Har du udfyldt alt korrekt? Prøv igen");
-        return false;
-    }
+    var fname = document.getElementById("fname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var contactForm =  {
+        fname : fname,
+        phone : phone,
+        email : email
+    };
+    localStorage["contactForm"] = JSON.stringify(contactForm);
 }
 
 // BS. Dette er funktionen for booking af personlig shopper
@@ -129,7 +151,6 @@ class bookPersonalShopper {
         }
     }
 }
-
 class costumer {
     //constructor indikerer at hver instans af kunde skal have følgende oplysninger:
     // fornavn, efternavn, telefonnummer, dato og tid.
@@ -166,4 +187,61 @@ shopper.showBooking();
 Følgende kunder har booket tid:
 Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
 Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
+ */
+
+// BS. Dette er funktionen for at shopper kan gemme items i en liste
+class userWishList {
+    //constructoren her sørger for at hver instans af userWishlist får et tomt array ved navn list tilknyttet
+    // og bliver initialiseret
+    constructor() {
+        this.list = [];
+    }
+    // add tilføjer det objekt den bliver givet til vores list array
+    add(item) {
+        this.list.push(item);
+    }
+    // showList eksekverer hver enkelt item i showItem funktion, samt giver dem et itemNr som er 1 større end deres
+    // indeks i array'et.
+    showList() {
+        console.log("Dette er din ønskeliste:\n");
+        for (let i = 0; i < this.list.length; i++) {
+            this.list[i].showItem(i+1, this.list[i]);
+        }
+    }
+}
+class item {
+    //constructor indikerer at hver instans af wish skal have følgende oplysninger:
+    // butiksnavn, detaljer, farve, størrelse og pris.
+    constructor(storeName, details, color, size, price) {
+        this.storeName = storeName;
+        this.details = details;
+        this.color = color;
+        this.size = size;
+        this.price = price;
+    }
+    //showItem() printer oplysninger om den enkelte instans af item samt deres itemNr.
+    // Dette gøres ud fra de to parametre som funktionen kræver som er et itemNr og et item objekt.
+    showItem(itemNr, item) {
+        console.log("Jeg ønsker mig " + itemNr + ": Fra " + item.storeName + " - " + item.details + " i " + item.color + " / Str.: "
+            + item.size + " Til " + item.price + " Kr.")
+    }
+}
+//item1 og item2 oprettes som nye instanser af vores item klasse med de følgende oplysninger
+const item1 = new item("Kvindemode", "Diana Kjole", "Rød", "Medium", 400);
+const item2 = new item("Herremode", "David Jeans", "Blå", "Large", 600);
+
+//want oprettes som instans af vores wishList klasse
+let want = new userWishList();
+
+// add funktionen i want eksekveres ved at give den vores to item som værdier -
+// og de bliver derfor tilføjet til want list array
+want.add(item1);
+want.add(item2);
+
+//want showList() funktion eksekveres og den printer listen
+want.showList();
+/* Output:
+Dette er din ønskeliste:
+Jeg ønsker mig 1: Fra Kvindemode - Diana kjole i Rød / Str.: Medium Til 400 Kr.
+Jeg ønsker mig 2: Fra Herremode - David Jeans i Blå / Str.: Large Til 600 Kr.
  */
