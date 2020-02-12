@@ -93,7 +93,7 @@ function showLogos() {
     logoIndex++;
     if (logoIndex > logos.length) {logoIndex = 1}
     logos[logoIndex-1].style.display = "block";
-    setTimeout(showLogos, 400); // Change image every 2 seconds
+    setTimeout(showLogos, 400);
 }
 
 // BS. Dette er funktionen der erstatter den "åbne" HTML med GoSave(Forsiden) Ved tryk på krydset oppe i højre hjørne.
