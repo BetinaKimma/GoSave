@@ -228,7 +228,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 65px;
 }
 /* Her er formen for Maengde defineret på siden for Maengderabat */
@@ -238,7 +238,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 65px;
 }
 
@@ -249,7 +249,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     float: left;
     width: 18%;
     padding: 10px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 65px;
 }
 /* BS. Her bliver teksten ved hver funktion på procentsiden defineret samlet men efter "kategori". */
