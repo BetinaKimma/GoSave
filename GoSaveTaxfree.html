@@ -3,7 +3,7 @@
 <!-- Head start -->
 <head>
     <meta charset="UTF-8">
-    <!-- Dette henviser til vores stylesheet -->
+    <!-- SB. Dette henviser til vores stylesheet -->
     <link rel = "stylesheet"
           type = "text/css"
           href = "GoSave.css" />
@@ -12,11 +12,11 @@
 <!-- Head slut -->
 <!-- Body start -->
 <body>
-<!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen -->
+<!-- SB. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen -->
 <section class="baseHeaderImage headerImageTaxfree">
     <button class="fas fa-times" id="closeTaxfree" onclick="returnToFrontPage()"></button>
 
-<!-- Dette er formen for vores funktion Taxfree -->
+<!-- SB. Dette er formen for vores funktion Taxfree -->
     <div id="udregnTaxfree" class="column">
         <p class="mainText" id="mainTextTaxfree" >Hvad får du tilbage via TaxFree?</p>
         <label class="inputText" for="prisFørTax" >Total Pris</label>
@@ -31,19 +31,19 @@
         </div>
     </div>
 
-    <!-- Dette er formen for vores funktion Valuta -->
+    <!-- SB. Dette er formen for vores funktion Valuta -->
     <div id="udregnValuta" class="column">
         <p class="mainText" id="mainTextValuta" >Omregn til Euro</p>
         <label class="inputText" for="danskDK" >Pris i DKK</label>
         <input class="inputField" type="text" id="danskDK" placeholder="KR..." name="danskDK">
-        <br
-        <br
+        <br>
+        <br>
             <button class="resultButton" onclick="udregnValuta">Udregn</button>
         <div id="resultatDivValuta">
             <p class="output">Pris i Euro: <span id="valuta"></span></p>
         </div>
     </div>
-    <!-- BS. Dette er menuen i venstre side -->
+    <!-- SB. Dette er menuen i venstre side -->
     <div class="navbarButtons">
         <a href="GoSaveProcent.html" id="procent">Procent<br>rabat</a>
         <a href="GoSaveMaengde.html" id="quantity">Mængde<br>rabat</a>
@@ -54,7 +54,7 @@
 </section>
 </body>
 <!-- Body slut -->
-<!-- Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
+<!-- SB. Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
 <script src="https://kit.fontawesome.com/e1859bc0a4.js" crossorigin="anonymous"></script>
 <script src="GoSaveScott.js"></script>
 <script src="GoSaveBetina.js"></script>

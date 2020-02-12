@@ -3,7 +3,7 @@
 <!-- Head start -->
 <head>
     <meta charset="UTF-8">
-    <!-- BS. Dette henviser til vores stylesheet -->
+    <!-- SB. Dette henviser til vores stylesheet -->
     <link rel = "stylesheet"
           type = "text/css"
           href = "GoSave.css" />
@@ -12,11 +12,11 @@
 <!-- Head slut -->
 <!-- Body start -->
 <body>
-<!-- BS. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen -->
+<!-- SB. Dette er headeren (hele baggrunden), den består af et billede der fylder hele skærmen -->
 <section class="baseHeaderImage headerImageQuantity">
     <button class="fas fa-times" id="closeQuantity" onclick="returnToFrontPage()"></button>
 
-    <!-- Dette er formen for vores funktion mængderabat-->
+    <!-- SB. Dette er formen for vores funktion mængderabat-->
 <div id="udregnMaengdeRabat" class="column">
     <p class="mainText" id="mainTextMængderabat" >Hvad sparer du per styk?</p>
     <label class="inputText" for="antalProdukter" >Antal?</label>
@@ -25,14 +25,14 @@
     <input class="inputField" type="text" id="stykPrisFørR" placeholder="Original styk pris..." name="stykPrisFørR">
     <label class="inputText" for="antalBetaler" >Antal du betaler for?</label>
     <input class="inputField" type="text" id="antalBetaler" placeholder="Antal du betaler for." name="antalBetaler">
-    <br
-    <br
+    <br>
+    <br>
     <button class="resultButton" onclick="udregnMaengdeRabat()">Udregn</button>
     <div id="resultatDivMaengde">
         <p class="output">Din sparet styk pris er: <span id="maengderabat"></span></p>
     </div>
 </div>
-    <!-- BS. Dette er menuen i venstre side -->
+    <!-- SB. Dette er menuen i venstre side -->
     <div class="navbarButtons">
         <a href="GoSaveProcent.html" id="procent">Procent<br>rabat</a>
         <a href="GoSaveMaengde.html" id="quantity">Mængde<br>rabat</a>
@@ -43,7 +43,7 @@
 </section>
 </body>
 <!-- Body slut -->
-<!-- BS. Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
+<!-- SB. Dette henviser til vores javascript (skal gøres efter body så html bliver læst først) -->
 <script src="https://kit.fontawesome.com/e1859bc0a4.js" crossorigin="anonymous"></script>
 <script src="GoSaveBetina.js"></script>
 <script src="GoSaveScott.js"></script>
