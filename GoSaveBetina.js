@@ -1,6 +1,6 @@
 // Dette er Javascript lavet af Betina
 
-// BS. Dette er funktionen til beregning af procentvis besparelse. Det er en færdig implementeret funktion.
+// BKS. Dette er funktionen til beregning af procentvis besparelse. Det er en færdig implementeret funktion.
 function calculatePercentSaving() {
     document.getElementById("resultDivPercent").style.display = "block";
 
@@ -20,7 +20,7 @@ function calculatePercentSaving() {
     }
 }
 
-// BS. Dette er funktionen til beregning af procentvis stigning. Det er en færdig implementeret funktion.
+// BKS. Dette er funktionen til beregning af procentvis stigning. Det er en færdig implementeret funktion.
 function calculatePercentDiff() {
     document.getElementById("resultDivDiff").style.display = "block";
 
@@ -40,7 +40,7 @@ function calculatePercentDiff() {
     }
 }
 
-// BS. Dette er funktionen til beregning af pris efter en procentrabat. Det er en færdig implementeret funktion.
+// BKS. Dette er funktionen til beregning af pris efter en procentrabat. Det er en færdig implementeret funktion.
 function calculatePriceAfterDiscount() {
     document.getElementById("resultDivDisc").style.display = "block";
 
@@ -59,7 +59,7 @@ function calculatePriceAfterDiscount() {
     }
 }
 
-// BS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
+// BKS. Dette er funktionen til beregning af procent af pris. Det er en færdig implementeret funktion.
 function calculatePercentOff() {
     document.getElementById("resultDivPercentOff").style.display = "block";
 
@@ -76,14 +76,14 @@ function calculatePercentOff() {
     }
 }
 
-// BS. Dette er funktionen der får logoer til at køre i loop på GoSave siden.
+// BKS. Dette er funktionen der får logoer til at køre i loop på GoSave siden.
 // (De logoer der kører nu er forskellige smileys, men de kunne skiftes ud med logoer for butikker.)
 var logoIndex = 0;
 showLogos();
 
 function showLogos() {
-    var i;
-    var logos = document.getElementsByClassName("myLogos");
+    let i;
+    let logos = document.getElementsByClassName("myLogos");
     if (logos.length == 0)
         return;
 
@@ -96,12 +96,12 @@ function showLogos() {
     setTimeout(showLogos, 400);
 }
 
-// BS. Dette er funktionen der erstatter den "åbne" HTML med GoSave(Forsiden) Ved tryk på krydset oppe i højre hjørne.
+// BKS. Dette er funktionen der erstatter den "åbne" HTML med GoSave(Forsiden) Ved tryk på krydset oppe i højre hjørne.
 function returnToFrontPage() {
     location.replace("GoSave.html");
 }
 
-// BS. Dette er funktionen der henter dato og tid,
+// BKS. Dette er funktionen der henter dato og tid,
 // kode taget fra W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_string_iso1 og
 // StackOverflow: https://stackoverflow.com/questions/10211145/getting-current-date-and-time-in-javascript
 // fundet den 09/02-20. Det er en færdig implementeret funktion.
@@ -117,7 +117,7 @@ if (document.getElementById("dateOnFront") != null)
     document.getElementById("dateOnFront").innerHTML = d;
 }
 
-// BS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
+// BKS. Dette er funktionen for kontakt formen på "book shopper" siden. Her udfyldes navn, telefon og email,
 // disse bliver gemt som string i LocalStorage ved methoden JSON.stringify.
 function contactForm() {
     var fname = document.getElementById("fname").value;
@@ -131,7 +131,7 @@ function contactForm() {
     localStorage["contactForm"] = JSON.stringify(contactForm);
 }
 
-// BS. Dette er funktionen for booking af personlig shopper. Der er ikke lavet HTML til denne funktion.
+// BKS. Dette er funktionen for booking af personlig shopper. Der er ikke lavet HTML til denne funktion.
 // Den virker i console.
 class bookPersonalShopper {
     //constructoren her sørger for at hver instans af bookPersonalShopper får et tomt array ved navn booking tilknyttet
@@ -190,7 +190,7 @@ Kunde 1: Jane Doe - 12345678 - 27 April - 10.00
 Kunde 2: John Doe - 87654321 - 09 Juni - 11.30
  */
 
-// BS. Dette er funktionen for at shopper kan gemme items i en liste. Der er ikke lavet HTML til denne funktion.
+// BKS. Dette er funktionen for at shopper kan gemme items i en liste. Der er ikke lavet HTML til denne funktion.
 // Funktionen virker i console
 class userWishList {
     //constructoren her sørger for at hver instans af userWishlist får et tomt array ved navn list tilknyttet

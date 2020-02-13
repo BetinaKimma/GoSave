@@ -1,7 +1,7 @@
-/* BS. Dette er vores CSS */
+/* BKS. Dette er vores CSS */
 body, html {
     height: 100%;
-/* BS. Her bliver close buttons (krydset oppe i højre hjørne på hver side / i hvert HTML)
+/* BKS. Her bliver close buttons (krydset oppe i højre hjørne på hver side / i hvert HTML)
 udseende defineret hver for sig */
 }
 #closeProcent{
@@ -44,7 +44,7 @@ udseende defineret hver for sig */
     background: transparent;
     border: transparent;
 }
-/* BS. Her bliver logos container, der findes på GoSave siden udseende defineret */
+/* BKS. Her bliver logos container, der findes på GoSave siden udseende defineret */
 .logos-container {
     max-width: 200px;
     position: relative;
@@ -52,11 +52,11 @@ udseende defineret hver for sig */
     margin-top: 40px;
     float: right;
 }
-/* BS. Denne kode skjuler logos som default */
+/* BKS. Denne kode skjuler logos som default */
 .myLogos {
     display: none;
 }
-/* BS. Her bliver logoernes udseende defineret samlet */
+/* BKS. Her bliver logoernes udseende defineret samlet */
 .logo {
     color: black;
     font-size: 100px;
@@ -64,7 +64,7 @@ udseende defineret hver for sig */
     position: absolute;
     top: 0;
 }
-/* BS. Fading animation gør at logoerne "fader" */
+/* BKS. Fading animation gør at logoerne "fader" */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -79,7 +79,7 @@ udseende defineret hver for sig */
     from {opacity: .4}
     to {opacity: 1}
 }
-/* BS. Her er alle baggrundsbilleder til alle sider. Alle billeder har en fælles styling,
+/* BKS. Her er alle baggrundsbilleder til alle sider. Alle billeder har en fælles styling,
 ved at have class="baseHeaderImage ". Først ses styling derefter url til hvert billede */
 .baseHeaderImage{
     height: 100%;
@@ -110,7 +110,7 @@ ved at have class="baseHeaderImage ". Først ses styling derefter url til hvert 
 .headerImageBookShopper{
     background-image: url("GoSaveBookShopper_optimized.jpg");
 }
-/* BS. Dette er teksten midt i billedet på "GoSave" siden (forsiden). Placerer tekst i midten af gruppebilledet */
+/* BKS. Dette er teksten midt i billedet på "GoSave" siden (forsiden). Placerer tekst i midten af gruppebilledet */
 .headerText {
     text-align: center;
     position: absolute;
@@ -121,12 +121,12 @@ ved at have class="baseHeaderImage ". Først ses styling derefter url til hvert 
     transform: translate(-50%, -50%);
     color: white;
 }
-/* BS. Dette er styling af dato og tid på GoSave siden */
+/* BKS. Dette er styling af dato og tid på GoSave siden */
 #dateOnFront{
     font-size: 22px;
     text-align: center;
 }
-/*BS. Dette er stylingen af menuknapperne i venstre side */
+/*BKS. Dette er stylingen af menuknapperne i venstre side */
 .navbarButtons a{
     position: absolute;
     left: -120px;
@@ -141,7 +141,7 @@ ved at have class="baseHeaderImage ". Først ses styling derefter url til hvert 
 .navbarButtons a:hover {
     left: 0;
 }
-/* BS. Herunder er styling af "indhold" af hver enkelt menuknap.
+/* BKS. Herunder er styling af "indhold" af hver enkelt menuknap.
 Gjort således, så man kan give hver knap en individuel farve, hvis man ønsker det. Og så har de fået en
 unik afstand til toppen, således at de ikke ligger oven på hinanden, og man kan ligeledes også selv
 justere afstanden mellem knapperne */
@@ -170,7 +170,7 @@ justere afstanden mellem knapperne */
     background-color: #aeb0dd;
     font-family: "Arial Black", "gadget", "sans-serif";
 }
-/* BS. Her bliver hver "forms" udseende på "procent"siden defineret hver for sig, gjort således,
+/* BKS. Her bliver hver "forms" udseende på "procent"siden defineret hver for sig, gjort således,
 da de er lavet som en column, da de skal have en forskellig placering på siden. */
 #calcareaPercent{
     background: none;
@@ -208,7 +208,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin-top: 180px;
     margin-left: 65px;
 }
-/* BS. Her bliver udseendet på formen på book shopper defineret*/
+/* BKS. Her bliver udseendet på formen på book shopper defineret*/
 #bookShopperForm{
     background: none;
     text-align:center;
@@ -220,7 +220,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     font-size: medium;
 }
 
-/* Design af Taxfree, Valuta og Maengde */
+/* SB. Design af Taxfree, Valuta og Maengde */
 /* Her er formen for TaxFree defineret på siden for TaxFree */
 #udregnTaxfree{
     background: none;
@@ -231,7 +231,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin-top: 100px;
     margin-left: 65px;
 }
-/* Her er formen for Maengde defineret på siden for Maengderabat */
+/* SB. Her er formen for Maengde defineret på siden for Maengderabat */
 #udregnMaengdeRabat{
     background: none;
     text-align: center;
@@ -242,7 +242,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin-left: 65px;
 }
 
-/* Her er formen for Valuta på siden for Taxfree */
+/* SB. Her er formen for Valuta på siden for Taxfree */
 #udregnValuta{
     background: none;
     text-align: center;
@@ -252,7 +252,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin-top: 100px;
     margin-left: 65px;
 }
-/* BS. Her bliver teksten ved hver funktion på procentsiden defineret samlet men efter "kategori". */
+/* BKS. Her bliver teksten ved hver funktion på procentsiden defineret samlet men efter "kategori". */
 .mainText{
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: xx-large;
@@ -261,7 +261,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: xx-large;
 }
-/* BS. her bliver input feltet stylet */
+/* BKS. her bliver input feltet stylet */
 .inputField{
     width: 85%;
     padding: .5rem .5rem .5rem;
@@ -272,7 +272,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     margin: auto;
     font-size: x-large;
 }
-/* BS. Her bliver udregn knappen stylet */
+/* BKS. Her bliver udregn knappen stylet */
 .resultButton{
     width: 85%;
     padding: .5rem .5rem .5rem;
@@ -283,7 +283,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: x-large;
 }
-/* BS. Dette er styling af output feltet*/
+/* BKS. Dette er styling af output feltet*/
 .output{
     padding: 9px 25px;
     background: linear-gradient(0deg, rgba(233, 248, 251, 1) 0%, rgba(196, 214, 218, 1) 100%);
@@ -297,7 +297,7 @@ da de er lavet som en column, da de skal have en forskellig placering på siden.
     font-family: "Arial Black", "gadget", "sans-serif";
     font-size: x-large;
 }
-/*Dette definerer udseenet på brugerprofilen */
+/* TL. Dette definerer udseenet på brugerprofilen */
 #Brugerprofil {
     background-color: white;
     max-width: 40%;
